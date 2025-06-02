@@ -10,6 +10,13 @@ const HeroSection = () => {
     }
   };
 
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background gradient */}
@@ -24,40 +31,43 @@ const HeroSection = () => {
         <div className="text-center max-w-4xl mx-auto">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gradient">
-              Hello, I'm Your Name
+              Hello, I'm Praneet Jayant Kala
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              A passionate developer creating beautiful and functional digital experiences
+            <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-3xl mx-auto">
+              A passionate full-stack developer and technology enthusiast dedicated to creating innovative digital solutions that bridge creativity and functionality.
+            </p>
+            <p className="text-lg text-muted-foreground/80 mb-8 max-w-2xl mx-auto">
+              Specializing in modern web technologies, I transform complex ideas into elegant, user-centric applications that make a meaningful impact.
             </p>
           </div>
 
           <div className="animate-slide-up flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-              onClick={() => scrollToSection('projects')}
+              className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              onClick={scrollToProjects}
             >
-              View My Work
+              Explore My Projects
             </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="px-8 py-4 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300"
+              className="px-8 py-4 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105"
               onClick={() => scrollToSection('contact')}
             >
-              Get In Touch
+              Let's Connect
             </Button>
           </div>
 
           {/* Social Links */}
           <div className="animate-slide-up flex items-center justify-center space-x-6 mb-12" style={{animationDelay: '0.4s'}}>
-            <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300">
+            <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
               <Github size={24} />
             </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300">
+            <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
               <Linkedin size={24} />
             </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300">
+            <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
               <Mail size={24} />
             </Button>
           </div>

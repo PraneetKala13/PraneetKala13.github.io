@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-gradient mb-4">Your Name</h3>
+              <h3 className="text-2xl font-bold text-gradient mb-4">Praneet Jayant Kala</h3>
               <p className="text-background/80 max-w-md mx-auto">
                 Thanks for visiting my portfolio. Let's create something amazing together!
               </p>
@@ -27,7 +27,7 @@ const Footer = () => {
                   Made with <Heart size={16} className="mx-1 text-red-400" fill="currentColor" /> using React & Tailwind CSS
                 </p>
                 <p className="text-background/60 text-sm">
-                  © {currentYear} Your Name. All rights reserved.
+                  © {currentYear} Praneet Jayant Kala. All rights reserved.
                 </p>
               </div>
             </div>
