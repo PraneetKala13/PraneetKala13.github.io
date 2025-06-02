@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -44,27 +44,26 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'your.email@example.com',
-      link: 'mailto:your.email@example.com'
+      value: 'pj.kala333@gmail.com',
+      link: 'mailto:pj.kala333@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      value: '+46 79 359 33 56',
+      link: 'tel:+46793593356'
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'New York, NY',
+      value: 'Stockholm, Sweden',
       link: '#'
     }
   ];
 
   const socialLinks = [
-    { icon: Github, label: 'GitHub', url: '#' },
-    { icon: Linkedin, label: 'LinkedIn', url: '#' },
-    { icon: Twitter, label: 'Twitter', url: '#' },
+    { icon: Github, label: 'GitHub', url: 'https://github.com/PraneetKala13' },
+    { icon: Linkedin, label: 'LinkedIn', url: 'https://www.linkedin.com/in/praneet-kala-0b165678/' },
   ];
 
   return (
@@ -124,7 +123,7 @@ const ContactSection = () => {
                       className="hover:bg-primary hover:text-white transition-colors duration-300"
                       asChild
                     >
-                      <a href={social.url} aria-label={social.label}>
+                      <a href={social.url} aria-label={social.label} target="_blank" rel="noopener noreferrer">
                         <social.icon size={20} />
                       </a>
                     </Button>

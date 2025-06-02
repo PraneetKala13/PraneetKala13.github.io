@@ -6,65 +6,86 @@ import { Button } from '@/components/ui/button';
 const ResumeSection = () => {
   const experiences = [
     {
-      title: 'Senior Frontend Developer',
-      company: 'Tech Solutions Inc.',
-      location: 'New York, NY',
-      period: '2022 - Present',
-      description: 'Lead frontend development for enterprise applications, mentor junior developers, and implement modern web technologies.',
+      title: 'Master Thesis Internship',
+      company: 'Piab Group',
+      location: 'Stockholm, Sweden',
+      period: 'February 2024 - August 2024',
+      description: 'Conducted comprehensive analysis of AI chatbot adoption and implementation for business optimization.',
       achievements: [
-        'Improved application performance by 40%',
-        'Led team of 5 developers',
-        'Implemented new design system'
-      ]
+        'Conducted an in-depth analysis of AI chatbot adoption trends, identifying key factors that led to an 84% increase in usage rates and a 97% growth in message interactions',
+        'Analysed complex datasets with PowerBI and advanced statistical tools, generating insights that highlighted a boost in productivity of 1.42%',
+        'Implemented reporting mechanisms generating real-time analytics on ChatBot usage each week while identifying bottlenecks promptly—resulting in a time savings of 5.41% and a 5.71% increase in productivity over 16 weeks'
+      ],
+      skills: 'Power BI, data visualisation, data-driven decision-making, project management, agile methodologies, Python'
     },
     {
-      title: 'Frontend Developer',
-      company: 'Digital Agency Co.',
-      location: 'San Francisco, CA',
-      period: '2020 - 2022',
-      description: 'Developed responsive web applications and collaborated with design teams to create exceptional user experiences.',
+      title: 'Team Lead/Project Manager',
+      company: 'Opti-Num Solutions',
+      location: 'Johannesburg, South Africa',
+      period: 'July 2021 - July 2022',
+      description: 'Led cross-functional teams while managing client relationships and delivering tailored solutions for enhanced business performance.',
       achievements: [
-        'Built 15+ client websites',
-        'Reduced load times by 30%',
-        'Improved accessibility scores'
-      ]
+        'Managed 4 direct reports and 3 indirect reports, coordinating efforts across sales, marketing, and management to achieve business objectives and enhance customer satisfaction',
+        'Implemented tailored solutions which addressed inefficiencies identified during client consultations, enabling actionable insights derived from research findings addressing key concerns impacting productivity',
+        'Devised targeted approaches to extend organisational abilities, resulting in a 25% increase in client satisfaction ratings, while maintaining 100% client retention and increasing the portfolio by 50%'
+      ],
+      skills: 'Agile methodologies, cross-functional leadership, data-driven decision-making, Project Management, customer engagement, process optimisation, MATLAB/Simulink, CRM'
     },
     {
-      title: 'Junior Web Developer',
-      company: 'StartUp Studio',
-      location: 'Austin, TX',
-      period: '2019 - 2020',
-      description: 'Started career building websites and learning modern development practices in a fast-paced startup environment.',
+      title: 'Senior Consultant/Project Manager',
+      company: 'Opti-Num Solutions',
+      location: 'Johannesburg, South Africa',
+      period: 'July 2020 - June 2021',
+      description: 'Delivered complex software solutions for Model-Based Systems Engineering while managing high-stakes defence sector projects.',
       achievements: [
-        'Contributed to 10+ projects',
-        'Learned React and TypeScript',
-        'Participated in code reviews'
-      ]
+        'Completed 5 software projects for Model-Based Systems Engineering using MATLAB and Simulink, enhancing efficiency by tailoring solutions to industry needs for Incomar, Hensoldt and CSIR',
+        'Developed a tailored System Architecture following comprehensive Requirements Analysis for a Defence client, aligning with unique specifications and delivering measurable improvements in project timelines by 20% through enhanced clarity',
+        'Developed customised solutions based on rigorous needs assessments conducted for high-stakes clients within the defence sector; delivered findings that led to resolving three critical challenges faced during implementation phases of complex projects'
+      ],
+      skills: 'MATLAB, Simulink, HDL, Python, Linux, DevOps, C/C++, project management, agile, CRM'
+    },
+    {
+      title: 'Consultant',
+      company: 'Opti-Num Solutions',
+      location: 'Johannesburg, South Africa',
+      period: 'February 2018 - June 2020',
+      description: 'Provided specialized consulting services for engineering and technical solutions.',
+      achievements: [],
+      skills: ''
+    },
+    {
+      title: 'Junior Application Engineer',
+      company: 'Opti-Num Solutions',
+      location: 'Johannesburg, South Africa',
+      period: 'June 2016 - January 2018',
+      description: 'Started career in application engineering, developing foundational skills in technical solution delivery.',
+      achievements: [],
+      skills: ''
     }
   ];
 
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Science',
-      school: 'University of Technology',
-      location: 'Boston, MA',
-      period: '2015 - 2019',
-      details: 'Graduated Summa Cum Laude, focused on web development and software engineering'
+      degree: 'MSc in Innovation Management and Product Development',
+      school: 'KTH Royal Institute of Technology',
+      location: 'Stockholm, Sweden',
+      period: 'August 2022 - September 2024',
+      details: 'Master of Science degree focusing on innovation management and product development methodologies'
     },
     {
-      degree: 'Web Development Bootcamp',
-      school: 'Code Academy',
-      location: 'Online',
-      period: '2019',
-      details: 'Intensive 6-month program covering full-stack development'
+      degree: 'BSc in Mechanical Engineering',
+      school: 'University of the Witwatersrand',
+      location: 'Johannesburg, South Africa',
+      period: 'February 2010 - April 2016',
+      details: 'Bachelor of Science degree in Mechanical Engineering with focus on systems and control engineering'
     }
   ];
 
   const certifications = [
-    'AWS Certified Developer Associate',
-    'Google Analytics Certified',
-    'React Developer Certification',
-    'Accessibility Specialist (IAAP)'
+    'Project Management - Project Planning: Putting It All Together (Google)',
+    'Agentic AI and AI Agents for Leaders (Vanderbilt University)',
+    'Project Management - Foundations of Project Management (Google)',
+    'Agile Crash Course: Agile Project Management (Udemy)'
   ];
 
   return (
@@ -111,14 +132,23 @@ const ResumeSection = () => {
                       </div>
                     </div>
                     <p className="text-muted-foreground mb-4">{exp.description}</p>
-                    <div className="space-y-2">
-                      {exp.achievements.map((achievement, idx) => (
-                        <div key={idx} className="flex items-center">
-                          <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                          <span className="text-sm">{achievement}</span>
-                        </div>
-                      ))}
-                    </div>
+                    {exp.achievements.length > 0 && (
+                      <div className="space-y-2 mb-4">
+                        {exp.achievements.map((achievement, idx) => (
+                          <div key={idx} className="flex items-start">
+                            <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                            <span className="text-sm">{achievement}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    {exp.skills && (
+                      <div className="mt-4">
+                        <p className="text-sm font-medium text-muted-foreground">
+                          <span className="font-semibold">Skills:</span> {exp.skills}
+                        </p>
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               ))}
@@ -156,7 +186,7 @@ const ResumeSection = () => {
               <Award className="text-primary mr-3" size={32} />
               <h3 className="text-3xl font-semibold">Certifications</h3>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid md:grid-cols-2 gap-4">
               {certifications.map((cert, index) => (
                 <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-6">
