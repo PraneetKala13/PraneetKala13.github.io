@@ -70,20 +70,23 @@ const AboutSection = () => {
               <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-emerald-200/30 shadow-sm">
                 <h3 className="text-2xl font-semibold mb-4 text-emerald-800">My Journey</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Hello! I'm Praneet Jayant Kala, a passionate developer with a deep love for creating digital 
-                  experiences that seamlessly blend functionality with beautiful design. My journey in web 
-                  development began with curiosity and has evolved into a dedicated pursuit of excellence 
-                  in crafting solutions that truly matter.
+                  Hello! I'm Praneet Jayant Kala, a developer passionate about blending functionality with design. 
+                  I began my journey with a Bachelor of Science in Mechanical Engineering from the University of the Witwatersrand. 
+                  After graduation, I worked at Opti-Num Solutions, where I advanced from Junior Application Engineer to 
+                  Team Lead/Project Manager, delivering innovative solutions and enhancing client satisfaction.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  With expertise spanning modern frontend technologies and a keen eye for user experience, 
-                  I specialize in transforming complex ideas into intuitive, accessible, and performant web 
-                  applications. Every project is an opportunity to push boundaries and deliver something extraordinary.
+                  I then moved to Sweden to complete my Master of Science in Innovation Management and Product Development 
+                  at KTH Royal Institute of Technology. During my thesis at Piab Group, I conducted an in-depth analysis of 
+                  AI chatbot adoption trends, significantly increasing usage rates and message interactions. My expertise 
+                  spans modern frontend technologies, and I specialize in transforming complex ideas into intuitive web applications.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  When I'm not immersed in code, you'll find me exploring emerging technologies, contributing 
-                  to open source projects, and constantly learning new ways to solve problems creatively. 
-                  I believe in the power of continuous growth and staying at the forefront of industry innovation.
+                  When I'm not immersed in code, you'll find me exploring emerging technologies, constantly networking and 
+                  sharing/learning about new ideas and messing around with new software tools. Aside from that, you will find 
+                  megoing for runs or taking part in races, getting my groove on with some Cuban Salsa or Bachata at dance socials,
+                  or enjoying time with friends, either baking or being in nature. Occasionally, you'll find me seeking out 
+                  new and adrenaline-pumping experiences.
                 </p>
               </div>
               
