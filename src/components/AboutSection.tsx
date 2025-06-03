@@ -49,8 +49,10 @@ const AboutSection = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">About Me</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Passionate developer and creative problem solver dedicated to crafting exceptional digital experiences 
-              that make a meaningful impact in people's lives.
+              I'm a tech enthusiast with an energetic drive to build innovative digital solutions that merge creativity with functionality. 
+              I thrive in collaborative environments and bring a positive, forward-thinking mindset to every project I undertake—always balancing 
+              optimism with realism and determination. As J.R.R. Tolkien once said, "Not all those who wander are lost"—a line that reflects 
+              my belief in curiosity, adaptability, and purposeful exploration in the ever-evolving tech landscape. 
             </p>
           </div>
 
