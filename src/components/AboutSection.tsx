@@ -57,12 +57,13 @@ const AboutSection = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="order-2 md:order-1">
-              <div className="bg-gradient-to-br from-amber-100 via-orange-100 to-yellow-100 rounded-2xl p-8 h-96 flex items-center justify-center shadow-lg border border-orange-200/50">
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-gradient-to-br from-orange-400 to-amber-500 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
-                    <User size={48} className="text-white" />
-                  </div>
-                  <img src="/DSC_4972_enhanced_2.JPG" alt="Personal image" />
+              <div className="bg-gradient-to-br from-amber-100 via-orange-100 to-yellow-100 rounded-2xl p-8 h-[610px] w-[610px] flex items-center justify-center shadow-lg border border-orange-200/50">
+                <div className="text-center w-full h-full flex items-center justify-center">
+                  <img
+                    src="/DSC_4972_enhanced_2.JPG"
+                    alt="Personal image"
+                    className="object-cover max-w-full max-h-full rounded-xl shadow-md"
+                  />
                 </div>
               </div>
             </div>
