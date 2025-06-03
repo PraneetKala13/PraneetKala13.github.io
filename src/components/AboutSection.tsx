@@ -1,33 +1,39 @@
 
-import { Code, Palette, Zap, Heart, Download, User } from 'lucide-react';
+import {  Cog, Clipboard, Shuffle, Users, BarChart, Download, User } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
 const AboutSection = () => {
   const skills = [
     {
-      icon: Code,
-      title: 'Frontend Development',
-      description: 'Creating responsive and interactive user interfaces with modern frameworks',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js']
+      icon: 'Cog',
+      title: 'Systems Engineering',
+      description: 'Designing and managing complex systems over their life cycles',
+      technologies: ['MATLAB', 'Simulink', 'Python', 'C/C++', 'Git', 'Docker', 'VMWare', 'DevOps', 'CI/CD']
     },
     {
-      icon: Palette,
-      title: 'UI/UX Design',
-      description: 'Designing intuitive and beautiful user experiences that delight users',
-      technologies: ['Figma', 'Adobe XD', 'Prototyping', 'User Research']
+      icon: 'Clipboard',
+      title: 'Project Management',
+      description: 'Planning, executing, and closing projects to achieve specific goals',
+      technologies: ['Python', 'SQL', 'Microsoft Suite', 'PowerBI', 'Git', 'CI/CD']
     },
     {
-      icon: Zap,
-      title: 'Performance',
-      description: 'Optimizing applications for speed, accessibility, and best practices',
-      technologies: ['Web Vitals', 'SEO', 'A11y', 'PWA']
+      icon: 'Shuffle',
+      title: 'Agile Methodologies',
+      description: 'Focusing on iterative development with evolving requirements',
+      technologies: ['Python', 'Bash', 'Git', 'Docker', 'DevOps', 'CI/CD']
     },
     {
-      icon: Heart,
-      title: 'Problem Solving',
-      description: 'Turning complex challenges into elegant solutions with creative thinking',
-      technologies: ['Algorithm Design', 'System Architecture', 'Code Review']
+      icon: 'Users',
+      title: 'Customer Relationship Management (CRM)',
+      description: 'Managing relationships and interactions with potential and current customers',
+      technologies: ['Python', 'SQL', 'HTML', 'Microsoft Suite', 'PowerBI', 'Git']
+    },
+    {
+      icon: 'BarChart',
+      title: 'Data Processing and Visualization',
+      description: 'Collecting, manipulating, and graphically representing data to produce meaningful insights',
+      technologies: ['Python', 'R', 'SQL', 'Pandas', 'Numpy', 'Scikit', 'PowerBI', 'Shiny']
     }
   ];
 
@@ -85,7 +91,7 @@ const AboutSection = () => {
               <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-orange-200/30 shadow-sm">
                 <h4 className="text-lg font-semibold mb-3 text-orange-800">Core Technologies</h4>
                 <div className="flex flex-wrap gap-2">
-                  {['JavaScript', 'React', 'TypeScript', 'Node.js', 'Python', 'AWS', 'MongoDB', 'PostgreSQL'].map((tech) => (
+                  {['MATLAB', 'Simulink', 'VHDL', 'Power BI', 'Python', 'GIT', 'Docker', 'PostgreSQL'].map((tech) => (
                     <span 
                       key={tech}
                       className="px-3 py-1 bg-gradient-to-r from-orange-100 to-amber-100 text-orange-800 rounded-full text-sm font-medium border border-orange-200/50 hover:shadow-sm transition-shadow duration-200"
