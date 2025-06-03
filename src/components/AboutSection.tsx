@@ -1,5 +1,5 @@
 
-import {  Cog, Clipboard, Shuffle, Users, BarChart, Download, User } from 'lucide-react';
+import {  Cog, Clipboard, Shuffle, Code, Users, BarChart, Download, User } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -9,31 +9,37 @@ const AboutSection = () => {
       icon: Cog,
       title: 'Systems Engineering',
       description: 'Designing and managing complex systems over their life cycles',
-      technologies: ['MATLAB', 'Simulink', 'Python', 'C/C++', 'Git', 'Docker', 'VMWare', 'DevOps', 'CI/CD']
+      technologies: ['MATLAB', 'Simulink', 'IBM DOORS', 'Git', 'Docker', 'VMWare', 'DevOps', 'CI/CD']
     },
     {
       icon: Clipboard,
       title: 'Project Management',
       description: 'Planning, executing, and closing projects to achieve specific goals',
-      technologies: ['Python', 'SQL', 'Microsoft Suite', 'PowerBI', 'Git', 'CI/CD']
+      technologies: ['Microsoft Suite', 'PowerBI', 'Git', 'CI/CD', 'Microsoft Dynamics 365', 'Excel']
+    },
+    {
+      icon: Code,
+      title: 'Software Development & Simulations',
+      description: 'Planning, executing, and closing projects to achieve specific goals',
+      technologies: ['MATLAB', 'Simulink', 'C/C++', 'VHDL', 'Linux', 'Bash', 'VMWare', 'GitHub']
     },
     {
       icon: Shuffle,
       title: 'Agile Methodologies',
       description: 'Focusing on iterative development with evolving requirements',
-      technologies: ['Python', 'Bash', 'Git', 'Docker', 'DevOps', 'CI/CD']
+      technologies: ['Microsoft Suite', 'Trello', 'GitHub', 'Docker', 'DevOps', 'CI/CD', 'CircleCI']
     },
     {
       icon: Users,
       title: 'Customer Relationship Management (CRM)',
       description: 'Managing relationships and interactions with potential and current customers',
-      technologies: ['Python', 'SQL', 'HTML', 'Microsoft Suite', 'PowerBI', 'Git']
+      technologies: ['CRM', 'Power BI', 'Microsoft Dynamics 365']
     },
     {
       icon: BarChart,
       title: 'Data Processing and Visualization',
       description: 'Collecting, manipulating, and graphically representing data to produce meaningful insights',
-      technologies: ['Python', 'R', 'SQL', 'Pandas', 'Numpy', 'Scikit', 'PowerBI', 'Shiny']
+      technologies: ['Python', 'Power BI', 'PowerPoint', 'Canva', 'Prezi', 'Excel']
     }
   ];
 
