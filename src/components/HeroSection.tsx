@@ -34,10 +34,13 @@ const HeroSection = () => {
               Hello, I'm Praneet Jayant Kala
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-3xl mx-auto">
-              A passionate full-stack developer and technology enthusiast dedicated to creating innovative digital solutions that bridge creativity and functionality.
+              I'm a tech enthusiast with an energetic drive to build innovative digital solutions that merge creativity with functionality. 
+              I thrive in collaborative environments and bring a positive, forward-thinking mindset to every project I undertake—always balancing 
+              optimism with realism and determination. As J.R.R. Tolkien once said, "Not all those who wander are lost"—a line that reflects 
+              my belief in curiosity, adaptability, and purposeful exploration in the ever-evolving tech landscape.
             </p>
             <p className="text-lg text-muted-foreground/80 mb-8 max-w-2xl mx-auto">
-              Specializing in modern web technologies, I transform complex ideas into elegant, user-centric applications that make a meaningful impact.
+              Specializing in Project Management, Digital Systems, Systems Engineering and Design Thinking, transforming complex ideas into elegant, user-centric applications that make a meaningful impact.
             </p>
           </div>
 

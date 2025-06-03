@@ -49,16 +49,13 @@ const AboutSection = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">About Me</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              I'm a tech enthusiast with an energetic drive to build innovative digital solutions that merge creativity with functionality. 
-              I thrive in collaborative environments and bring a positive, forward-thinking mindset to every project I undertake—always balancing 
-              optimism with realism and determination. As J.R.R. Tolkien once said, "Not all those who wander are lost"—a line that reflects 
-              my belief in curiosity, adaptability, and purposeful exploration in the ever-evolving tech landscape. 
+              Passionate developer and creative problem solver dedicated to crafting exceptional digital experiences that make a meaningful impact in people's lives. 
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="order-2 md:order-1">
-              <div className="bg-gradient-to-br from-emerald-100 via-sky-100 to-lime-100 rounded-2xl p-8 h-[420px] w-[420px] flex items-center justify-center shadow-lg border border-emerald-200/50">
+              <div className="bg-gradient-to-br from-emerald-100 via-sky-100 to-lime-100 rounded-2xl p-8 h-[880px] w-[760px] flex items-center justify-center shadow-lg border border-emerald-200/50">
                 <div className="text-center w-full h-full flex items-center justify-center">
                   <img
                     src="/DSC_4972_enhanced_2.JPG"
