@@ -57,7 +57,7 @@ const AboutSection = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="order-2 md:order-1">
-              <div className="bg-gradient-to-br from-amber-100 via-orange-100 to-yellow-100 rounded-2xl p-8 h-[610px] w-[610px] flex items-center justify-center shadow-lg border border-orange-200/50">
+              <div className="bg-gradient-to-br from-amber-100 via-orange-100 to-yellow-100 rounded-2xl p-8 h-[420px] w-[420px] flex items-center justify-center shadow-lg border border-orange-200/50">
                 <div className="text-center w-full h-full flex items-center justify-center">
                   <img
                     src="/DSC_4972_enhanced_2.JPG"
