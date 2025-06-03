@@ -20,7 +20,7 @@ const AboutSection = () => {
     {
       icon: Code,
       title: 'Software Development & Simulations',
-      description: 'Planning, executing, and closing projects to achieve specific goals',
+      description: 'Developing and simulating models using MathWorks tools and supporting tools to bring value to customers',
       technologies: ['MATLAB', 'Simulink', 'C/C++', 'VHDL', 'Linux', 'Bash', 'VMWare', 'GitHub']
     },
     {
