@@ -62,7 +62,7 @@ const AboutSection = () => {
                   <div className="w-32 h-32 bg-gradient-to-br from-orange-400 to-amber-500 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
                     <User size={48} className="text-white" />
                   </div>
-                  <img src="public/DSC_4972_enhanced_2.JPG" alt="Personal image" />
+                  <img src="/DSC_4972_enhanced_2.JPG" alt="Personal image" />
                 </div>
               </div>
             </div>
