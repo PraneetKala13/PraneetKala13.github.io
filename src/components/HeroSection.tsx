@@ -63,16 +63,22 @@ const HeroSection = () => {
           </div>
 
           {/* Social Links */}
-          <div className="animate-slide-up flex items-center justify-center space-x-6 mb-12" style={{animationDelay: '0.4s'}}>
-            <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
-              <Github size={24} />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
-              <Linkedin size={24} />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
-              <Mail size={24} />
-            </Button>
+          <div className="animate-slide-up flex items-center justify-center space-x-6 mb-12" style={{ animationDelay: '0.4s' }}>
+            <a href="https://github.com/PraneetKala13?tab=repositories" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
+                <Github size={24} />
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/in/praneet-kala-0b165678/" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
+                <Linkedin size={24} />
+              </Button>
+            </a>
+            <a href="mailto:pj.kala333@gmail.com">
+              <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
+                <Mail size={24} />
+              </Button>
+            </a>
           </div>
 
           {/* Scroll indicator */}
