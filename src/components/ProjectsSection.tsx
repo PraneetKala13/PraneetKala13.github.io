@@ -270,14 +270,16 @@ const ProjectsSection = () => {
                     <p className="text-sm text-muted-foreground mb-3">
                       <strong>Publisher:</strong> {publication.publisher} • <strong>Date:</strong> {publication.date}
                     </p>
-                    <Button 
-                      variant="outline" 
-                      size="sm"
-                      className="border-emerald-300 text-emerald-700 hover:bg-emerald-50"
-                    >
-                      <FileText size={16} className="mr-2" />
-                      View Publication
-                    </Button>
+                    <a href="https://ieeexplore.ieee.org/document/7244739" target="_blank" rel="noopener noreferrer">
+                      <Button 
+                        variant="outline" 
+                        size="sm"
+                        className="border-emerald-300 text-emerald-700 hover:bg-emerald-50"
+                      >
+                        <FileText size={16} className="mr-2" />
+                        View Publication
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </CardContent>
