@@ -2,6 +2,7 @@
 import {  Cog, Clipboard, Shuffle, Users, BarChart, Download, User } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+// import ProfessionalPhoto from 'C:/Users/pjkal/Documents/Projects/Personal_Website/src/DSC_4972_enhanced.JPG';
 
 const AboutSection = () => {
   const skills = [
@@ -61,8 +62,7 @@ const AboutSection = () => {
                   <div className="w-32 h-32 bg-gradient-to-br from-orange-400 to-amber-500 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
                     <User size={48} className="text-white" />
                   </div>
-                  <p className="text-muted-foreground font-medium">Professional Photo</p>
-                  <p className="text-sm text-muted-foreground mt-1">Upload your photo to replace this placeholder</p>
+                  <img src="./DSC_4972_enhanced.JPG" alt="Personal image" />
                 </div>
               </div>
             </div>
