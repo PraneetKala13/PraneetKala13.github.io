@@ -67,7 +67,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-warm-gradient-soft">
+    <section id="contact" className="py-20 bg-nature-gradient-soft">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -91,7 +91,7 @@ const ContactSection = () => {
 
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
-                  <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+                  <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-emerald-200/30">
                     <CardContent className="p-6">
                       <div className="flex items-center space-x-4">
                         <div className="bg-primary/10 p-3 rounded-lg">
@@ -120,7 +120,7 @@ const ContactSection = () => {
                       key={index}
                       variant="outline"
                       size="icon"
-                      className="hover:bg-primary hover:text-white transition-colors duration-300"
+                      className="hover:bg-primary hover:text-white transition-colors duration-300 border-emerald-200"
                       asChild
                     >
                       <a href={social.url} aria-label={social.label} target="_blank" rel="noopener noreferrer">

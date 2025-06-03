@@ -64,8 +64,11 @@ export default {
 				'serif': ['Playfair Display', 'serif'],
 			},
 			backgroundImage: {
-				'warm-gradient': 'linear-gradient(135deg, hsl(20, 85%, 65%) 0%, hsl(25, 75%, 55%) 50%, hsl(30, 80%, 45%) 100%)',
-				'warm-gradient-soft': 'linear-gradient(135deg, hsl(30, 60%, 95%) 0%, hsl(25, 50%, 92%) 100%)',
+				'emerald-gradient': 'linear-gradient(135deg, hsl(160, 84%, 39%) 0%, hsl(158, 64%, 52%) 50%, hsl(156, 73%, 59%) 100%)',
+				'ocean-gradient': 'linear-gradient(135deg, hsl(197, 71%, 73%) 0%, hsl(199, 89%, 48%) 50%, hsl(200, 98%, 39%) 100%)',
+				'moss-gradient': 'linear-gradient(135deg, hsl(88, 50%, 53%) 0%, hsl(84, 33%, 44%) 50%, hsl(82, 39%, 30%) 100%)',
+				'nature-gradient': 'linear-gradient(135deg, hsl(160, 84%, 95%) 0%, hsl(197, 71%, 95%) 50%, hsl(88, 50%, 95%) 100%)',
+				'nature-gradient-soft': 'linear-gradient(135deg, hsl(160, 60%, 97%) 0%, hsl(197, 50%, 96%) 100%)',
 			},
 			keyframes: {
 				'accordion-down': {

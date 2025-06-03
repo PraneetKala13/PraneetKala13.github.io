@@ -20,12 +20,12 @@ const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-warm-gradient-soft"></div>
+      <div className="absolute inset-0 bg-nature-gradient-soft"></div>
       
       {/* Floating shapes */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float"></div>
-      <div className="absolute bottom-32 right-20 w-16 h-16 bg-accent/30 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
-      <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-primary/10 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
+      <div className="absolute top-20 left-10 w-20 h-20 bg-emerald-500/20 rounded-full animate-float"></div>
+      <div className="absolute bottom-32 right-20 w-16 h-16 bg-sky-400/30 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
+      <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-lime-600/10 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
