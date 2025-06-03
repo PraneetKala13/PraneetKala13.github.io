@@ -28,7 +28,7 @@ const HeroSection = () => {
       <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-lime-600/10 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-center max-w-6xl mx-auto">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gradient">
               Hello, I'm Praneet Jayant Kala
