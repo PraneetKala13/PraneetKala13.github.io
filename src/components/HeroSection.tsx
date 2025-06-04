@@ -27,19 +27,19 @@ const HeroSection = () => {
       <div className="absolute bottom-32 right-20 w-16 h-16 bg-sky-400/30 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
       <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-lime-600/10 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
 
-      <div className="container mx-auto px-2 py-20 relative z-10">
-        <div className="text-center max-w-6xl mx-auto">
+      <div className="container mx-auto px-6 py-16 relative z-10 max-w-7xl">
+        <div className="text-center mx-auto">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gradient">
               Hello, I'm Praneet Jayant Kala
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-5xl mx-auto">
               Recently graduated from KTH 🎓, I'm a tech enthusiast with an energetic drive to build innovative digital solutions that merge creativity with functionality. 
               I thrive in collaborative environments and bring a positive, forward-thinking mindset to every project I undertake—always balancing 
               optimism with realism and determination. As J.R.R. Tolkien once said, "Not all those who wander are lost"—a line that reflects 
               my belief in curiosity, adaptability, and purposeful exploration in the ever-evolving tech landscape.
             </p>
-            <p className="text-lg text-muted-foreground/80 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground/80 mb-8 max-w-4xl mx-auto">
               Specializing in Project Management, Digital Systems, Systems Engineering and Design Thinking, transforming complex ideas into elegant, user-centric applications that make a meaningful impact.
             </p>
           </div>
