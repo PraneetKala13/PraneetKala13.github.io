@@ -34,7 +34,7 @@ const HeroSection = () => {
               Hello, I'm Praneet Jayant Kala
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-3xl mx-auto">
-              I'm a tech enthusiast with an energetic drive to build innovative digital solutions that merge creativity with functionality. 
+              Recently graduated from KTH 🎓, I'm a tech enthusiast with an energetic drive to build innovative digital solutions that merge creativity with functionality. 
               I thrive in collaborative environments and bring a positive, forward-thinking mindset to every project I undertake—always balancing 
               optimism with realism and determination. As J.R.R. Tolkien once said, "Not all those who wander are lost"—a line that reflects 
               my belief in curiosity, adaptability, and purposeful exploration in the ever-evolving tech landscape.
