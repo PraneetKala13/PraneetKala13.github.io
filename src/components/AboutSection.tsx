@@ -76,7 +76,7 @@ const AboutSection = () => {
               <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-emerald-200/30 shadow-sm">
                 <h3 className="text-2xl font-semibold mb-4 text-emerald-800">My Journey</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Hello! I'm Praneet Jayant Kala, a developer passionate about blending functionality with design. 
+                  Hello! I'm Praneet Jayant Kala, an energetic and passionate individual, blending functionality with design. 
                   I began my journey with a Bachelor of Science in Mechanical Engineering from the University of the Witwatersrand. 
                   After graduation, I worked at Opti-Num Solutions, where I advanced from Junior Application Engineer to 
                   Team Lead/Project Manager, delivering innovative solutions and enhancing client satisfaction.
