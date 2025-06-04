@@ -66,17 +66,17 @@ const HeroSection = () => {
           <div className="animate-slide-up flex items-center justify-center space-x-6 mb-12" style={{ animationDelay: '0.4s' }}>
             <a href="https://github.com/PraneetKala13?tab=repositories" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
-                <Github size={28} />
+                <Github size={32} />
               </Button>
             </a>
             <a href="https://www.linkedin.com/in/praneet-kala-0b165678/" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
-                <Linkedin size={28} />
+                <Linkedin size={32} />
               </Button>
             </a>
             <a href="mailto:pj.kala333@gmail.com">
               <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
-                <Mail size={28} />
+                <Mail size={32} />
               </Button>
             </a>
           </div>

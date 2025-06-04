@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -124,7 +123,7 @@ const ContactSection = () => {
                       asChild
                     >
                       <a href={social.url} aria-label={social.label} target="_blank" rel="noopener noreferrer">
-                        <social.icon size={20} />
+                        <social.icon size={24} />
                       </a>
                     </Button>
                   ))}
