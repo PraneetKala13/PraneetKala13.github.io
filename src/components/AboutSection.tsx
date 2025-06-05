@@ -114,7 +114,12 @@ const AboutSection = () => {
                 className="w-full bg-gradient-to-r from-emerald-600 to-sky-600 hover:from-emerald-700 hover:to-sky-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 size="lg"
               >
-                <a href="/Resume - Praneet Kala.pdf" download>
+                <a
+                  href="https://github.com/PraneetKala13/your-repo-name/raw/main/public/Resume - Praneet Kala.pdf"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Download className="mr-2" size={20} />
                   Download My Resume
                 </a>
