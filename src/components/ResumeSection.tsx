@@ -103,12 +103,21 @@ const ResumeSection = () => {
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               My professional journey and the experiences that have shaped my career.
             </p>
-            <Button 
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Download PDF Resume
-            </Button>
+            <Button
+                asChild
+                className="w-full bg-gradient-to-r from-emerald-600 to-sky-600 hover:from-emerald-700 hover:to-sky-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                size="lg"
+              >
+                <a
+                  href="https://github.com/PraneetKala13/PraneetKala13.github.io/raw/main/public/Resume - Praneet Kala.pdf"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Download className="mr-2" size={20} />
+                  Download My Resume
+                </a>
+              </Button>
           </div>
 
           {/* Experience Section */}
