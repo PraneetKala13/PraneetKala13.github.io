@@ -8,12 +8,12 @@ const ResumeSection = () => {
       title: 'Master Thesis Internship',
       company: 'Piab Group',
       location: 'Stockholm, Sweden',
-      period: 'February 2024 - August 2024',
+      period: 'February 2024 - June 2024',
       description: 'Conducted comprehensive analysis of AI chatbot adoption and implementation for business optimization.',
       achievements: [
-        'Conducted an in-depth analysis of AI chatbot adoption trends, identifying key factors that led to an 84% increase in usage rates and a 97% growth in message interactions',
-        'Analysed complex datasets with PowerBI and advanced statistical tools, generating insights that highlighted a boost in productivity of 1.42%',
-        'Implemented reporting mechanisms generating real-time analytics on ChatBot usage each week while identifying bottlenecks promptly—resulting in a time savings of 5.41% and a 5.71% increase in productivity over 16 weeks'
+        'Conducted comprehensive analysis of AI chatbot adoption trends, identifying key drivers behind an 84% increase in usage and 97% growth in interactions',
+        'Analysed complex datasets using PowerBI and advanced statistical methods, uncovering insights that boosted productivity by 1.42%',
+        'Designed and implemented real-time reporting mechanisms, enabling prompt identification of bottlenecks; achieved 5.41% time savings and a 5.71% productivity increase over 16 weeks'
       ],
       skills: 'Power BI, data visualisation, data-driven decision-making, project management, agile methodologies, Python'
     },
@@ -24,9 +24,9 @@ const ResumeSection = () => {
       period: 'July 2021 - July 2022',
       description: 'Led cross-functional teams while managing client relationships and delivering tailored solutions for enhanced business performance.',
       achievements: [
-        'Managed 4 direct reports and 3 indirect reports, coordinating efforts across sales, marketing, and management to achieve business objectives and enhance customer satisfaction',
-        'Implemented tailored solutions which addressed inefficiencies identified during client consultations, enabling actionable insights derived from research findings addressing key concerns impacting productivity',
-        'Devised targeted approaches to extend organisational abilities, resulting in a 25% increase in client satisfaction ratings, while maintaining 100% client retention and increasing the portfolio by 50%'
+        'Led a team of 7 direct and indirect reports across sales, marketing, and management to drive business objectives and enhance customer satisfaction',
+        'Developed tailored solutions addressing operational inefficiencies revealed during client consultations, enabling actionable insights that improved productivity',
+        'Executed strategic initiatives resulting in a 25% increase in client satisfaction ratings, maintained 100% client retention, and expanded the portfolio by 50%'
       ],
       skills: 'Agile methodologies, cross-functional leadership, data-driven decision-making, Project Management, customer engagement, process optimisation, MATLAB/Simulink, CRM'
     },
@@ -37,9 +37,9 @@ const ResumeSection = () => {
       period: 'July 2020 - June 2021',
       description: 'Delivered complex software solutions for Model-Based Systems Engineering while managing high-stakes defence sector projects.',
       achievements: [
-        'Completed 5 software projects for Model-Based Systems Engineering using MATLAB and Simulink, enhancing efficiency by tailoring solutions to industry needs for Incomar, Hensoldt and CSIR',
-        'Developed a tailored System Architecture following comprehensive Requirements Analysis for a Defence client, aligning with unique specifications and delivering measurable improvements in project timelines by 20% through enhanced clarity',
-        'Developed customised solutions based on rigorous needs assessments conducted for high-stakes clients within the defence sector; delivered findings that led to resolving three critical challenges faced during implementation phases of complex projects'
+        'Delivered five software projects utilising MATLAB and Simulink to enhance industry-specific workflows for key clients including Incomar, Hensoldt, and CSIR',
+        'Developed a customised system architecture following comprehensive requirements analysis for a defence client, improving project timelines by 20%',
+        'Crafted tailored solutions through rigorous needs assessments, resolving critical challenges during complex project implementation phases'
       ],
       skills: 'MATLAB, Simulink, HDL, Python, Linux, DevOps, C/C++, project management, agile, CRM'
     },
@@ -48,9 +48,13 @@ const ResumeSection = () => {
       company: 'Opti-Num Solutions',
       location: 'Johannesburg, South Africa',
       period: 'February 2018 - June 2020',
-      description: 'Provided specialized consulting services for engineering and technical solutions.',
-      achievements: [],
-      skills: ''
+      description: 'Delivered specialised engineering consulting with tailored solutions for the education sector.',
+      achievements: [
+        'Delivered specialised engineering consulting with tailored solutions for the education sector',
+        'Built strong client partnerships through hands-on demos, training, and workshops',
+        'Resolved complex challenges in modelling, simulation, control, estimation, and software engineering'
+      ],
+      skills: 'Engineering consulting, client training, modelling, simulation, control systems, estimation, software engineering'
     },
     {
       title: 'Junior Application Engineer',
@@ -58,8 +62,11 @@ const ResumeSection = () => {
       location: 'Johannesburg, South Africa',
       period: 'June 2016 - January 2018',
       description: 'Started career in application engineering, developing foundational skills in technical solution delivery.',
-      achievements: [],
-      skills: ''
+      achievements: [
+        'Started career in application engineering, delivering low-cost hardware solutions (Raspberry Pi, Arduino) to the Education sector',
+        'Led large-scale seminars and workshops for educational institutions'
+      ],
+      skills: 'Hardware solutions, Raspberry Pi, Arduino, education sector engagement, workshops, seminars'
     }
   ];
 
