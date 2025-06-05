@@ -115,7 +115,7 @@ const AboutSection = () => {
                 size="lg"
               >
                 <a
-                  href="https://github.com/PraneetKala13/your-repo-name/raw/main/public/Resume - Praneet Kala.pdf"
+                  href="https://github.com/PraneetKala13/PraneetKala13.github.io/raw/main/public/Resume - Praneet Kala.pdf"
                   download
                   target="_blank"
                   rel="noopener noreferrer"
