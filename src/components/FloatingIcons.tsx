@@ -17,7 +17,6 @@ interface FloatingIcon {
     size: number;
 }
 
-
 interface FloatingIconsProps {
     isEnabled: boolean;
 }
