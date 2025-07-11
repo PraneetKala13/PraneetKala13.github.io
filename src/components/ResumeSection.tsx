@@ -13,63 +13,70 @@ const ResumeSection = () => {
       achievements: [
         'Increased chatbot usage by <strong>84%</strong> and interactions by <strong>97%</strong> through product analytics and user behaviour insights.',
         'Delivered real-time dashboards (Power BI), improving task prioritisation and reducing resolution time by 18%, leading to a <strong>5.71% productivity uplift.</strong>',
-        'Defined reporting architecture aligned to product KPIsa, reducing reporting cycles by 30%.',
-        'Presented strategic recommendations to C-level leadership, influencing a 12-month digital adoption roadmap.',
-        'Championed adoption initiatives across internal platforms indirectly through the thesis research, increasing active user engagement by 50% within 3 months.'
+        'Defined reporting architecture aligned to product KPIsa, reducing reporting cycles by <strong>30%.</strong>',
+        'Presented strategic recommendations to C-level leadership, influencing a <strong>12-month digital adoption roadmap.</strong>',
+        'Championed adoption initiatives across internal platforms indirectly through the thesis research, increasing active user engagement by <strong>50%</strong> within 3 months.'
       ],
       skills: 'Power BI, data visualisation, data-driven decision-making, project management, agile methodologies, Python'
     },
     {
       title: 'Team Lead/Project Manager',
-      company: 'Opti-Num Solutions',
+      company: 'Opti-Num Solutions (Distributors of MathWorks tools)',
       location: 'Johannesburg, South Africa',
       period: 'July 2021 - July 2022',
       description: 'Led cross-functional teams while managing client relationships and delivering tailored solutions for enhanced business performance.',
       achievements: [
-        'Led a team of 7 direct and indirect reports across sales, marketing, and management to drive business objectives and enhance customer satisfaction',
-        'Developed tailored solutions addressing operational inefficiencies revealed during client consultations, enabling actionable insights that improved productivity',
-        'Executed strategic initiatives resulting in a 25% increase in client satisfaction ratings, maintained 100% client retention, and expanded the portfolio by 50%'
+        'Managed 7 team members across 3 business units, delivering 4 internal digital tools that reduced manual processing time by <strong>40%.</strong>',
+        'Rolled out workflow automation products cutting lead times by <strong>~30%</strong> and increasing cross-team request throughput by <strong>25%.</strong>',
+        'Oversaw portfolio of <strong>15+ digital tools</strong>, executing product lifecycle strategies from concept to scale, improving time-to-value by <strong>28%</strong>.',
+        'Managed customer portfolios for 12+ enterprise clients in <strong>Aerospace & Defence, Automotive and Energy</strong>, which includes SAAB, Hensoldt, Denel Dynamics, Paramount and Milkor, boosting satisfaction by <strong>25%</strong> and achieving <strong>100% portfolio retention</strong>.',
+        'Instituted agile feedback frameworks that aligned cross-functional teams & improved delivery cadence by <strong>22%</strong>.',
+        'Instituted agile delivery practices and stakeholder feedback loops, enhancing visibility and delivery pace.'
       ],
       skills: 'Agile methodologies, cross-functional leadership, data-driven decision-making, Project Management, customer engagement, process optimisation, MATLAB/Simulink, CRM'
     },
     {
       title: 'Senior Consultant/Project Manager',
-      company: 'Opti-Num Solutions',
+      company: 'Opti-Num Solutions (Distributors of MathWorks tools)',
       location: 'Johannesburg, South Africa',
       period: 'July 2020 - June 2021',
       description: 'Delivered complex software solutions for Model-Based Systems Engineering while managing high-stakes defence sector projects.',
       achievements: [
-        'Delivered five software projects utilising MATLAB and Simulink to enhance industry-specific workflows for key clients including Incomar, Hensoldt, and CSIR',
-        'Developed a customised system architecture following comprehensive requirements analysis for a defence client, improving project timelines by 20%',
-        'Crafted tailored solutions through rigorous needs assessments, resolving critical challenges during complex project implementation phases'
+        'Delivered 5 custom software platforms for defence clients (SAAB, Denel), improving data processing by <strong>20%</strong> and cutting deployment time by <strong>15%</strong>.',
+        'Designed tailored architectures and led implementation across defence and R&D use cases.',
+        'Defined MVP scope and backlog; achieved <strong>90%</strong> feature delivery accuracy within client-set deadlines.',
+        'Embedded traceability and compliance processes that reduced documentation effort by <strong>35%</strong>.',
+        'Supported budget planning and vendor cost optimisation efforts, contributing to <strong>15% savings</strong> across digital tools procurement.'
+
       ],
       skills: 'MATLAB, Simulink, HDL, Python, Linux, DevOps, C/C++, project management, agile, CRM'
     },
     {
-      title: 'Consultant',
-      company: 'Opti-Num Solutions',
+      title: 'Junior Application Engineer → Consultant June 2016 - June 2020',
+      company: 'Opti-Num Solutions (Distributors of MathWorks tools)',
       location: 'Johannesburg, South Africa',
-      period: 'February 2018 - June 2020',
+      period: 'June 2016 - June 2020',
       description: 'Delivered specialised engineering consulting with tailored solutions for the education sector.',
       achievements: [
-        'Delivered specialised engineering consulting with tailored solutions for the education sector',
-        'Built strong client partnerships through hands-on demos, training, and workshops',
-        'Resolved complex challenges in modelling, simulation, control, estimation, and software engineering'
+        'Built and delivered digital education solutions using MATLAB and Simulink across <strong>20+</strong> institutions.',
+        'Facilitated <strong>50+</strong> technical enablement workshops and integration planning sessions.',
+        'Introduced low-cost hardware (e.g., Raspberry Pi) into academic settings, fostering digital innovation.'
+
       ],
       skills: 'Engineering consulting, client training, modelling, simulation, control systems, estimation, software engineering'
-    },
-    {
-      title: 'Junior Application Engineer',
-      company: 'Opti-Num Solutions',
-      location: 'Johannesburg, South Africa',
-      period: 'June 2016 - January 2018',
-      description: 'Started career in application engineering, developing foundational skills in technical solution delivery.',
-      achievements: [
-        'Started career in application engineering, delivering low-cost hardware solutions (Raspberry Pi, Arduino) to the Education sector',
-        'Led large-scale seminars and workshops for educational institutions'
-      ],
-      skills: 'Hardware solutions, Raspberry Pi, Arduino, education sector engagement, workshops, seminars'
     }
+    // {
+    //  title: 'Junior Application Engineer',
+    //  company: 'Opti-Num Solutions',
+    //  location: 'Johannesburg, South Africa',
+    //  period: 'June 2016 - January 2018',
+    //  description: 'Started career in application engineering, developing foundational skills in technical solution delivery.',
+    //  achievements: [
+    //    'Started career in application engineering, delivering low-cost hardware solutions (Raspberry Pi, Arduino) to the Education sector',
+    //    'Led large-scale seminars and workshops for educational institutions'
+    //  ],
+    //  skills: 'Hardware solutions, Raspberry Pi, Arduino, education sector engagement, workshops, seminars'
+    //}
   ];
 
   const education = [
