@@ -118,4 +118,4 @@ const FloatingIcons: React.FC<FloatingIconsProps> = ({ isEnabled }) => {
   );
 };
 
-export default FloatingIcon;
+export default FloatingIcons;
