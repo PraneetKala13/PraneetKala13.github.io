@@ -23,6 +23,29 @@ const HeroSection = () => {
       {/* Background gradient */}
       <div className="absolute inset-0 bg-nature-gradient-soft"></div>
 
+      {/* Floating tech icons */}
+      <div className="absolute top-20 left-10 w-16 h-16 bg-emerald-500/10 rounded-lg flex items-center justify-center animate-float">
+        <span className="text-2xl opacity-30">🐍</span>
+      </div>
+      <div className="absolute bottom-32 right-20 w-14 h-14 bg-sky-400/15 rounded-lg flex items-center justify-center animate-float" style={{ animationDelay: '1s' }}>
+        <span className="text-xl opacity-30">☕</span>
+      </div>
+      <div className="absolute top-1/3 left-1/4 w-12 h-12 bg-blue-600/10 rounded-lg flex items-center justify-center animate-float" style={{ animationDelay: '2s' }}>
+        <span className="text-lg opacity-30">🐳</span>
+      </div>
+      <div className="absolute top-1/2 right-1/3 w-18 h-18 bg-orange-500/10 rounded-lg flex items-center justify-center animate-float" style={{ animationDelay: '3s' }}>
+        <span className="text-2xl opacity-30">📊</span>
+      </div>
+      <div className="absolute bottom-1/4 left-1/3 w-14 h-14 bg-purple-500/10 rounded-lg flex items-center justify-center animate-float" style={{ animationDelay: '4s' }}>
+        <span className="text-xl opacity-30">⚛️</span>
+      </div>
+      <div className="absolute top-1/4 right-1/4 w-16 h-16 bg-green-500/10 rounded-lg flex items-center justify-center animate-float" style={{ animationDelay: '0.5s' }}>
+        <span className="text-2xl opacity-30">📱</span>
+      </div>
+      <div className="absolute bottom-1/3 right-1/5 w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center animate-float" style={{ animationDelay: '2.5s' }}>
+        <span className="text-lg opacity-30">🔧</span>
+      </div>
+
       <div className="container mx-auto px-6 py-16 relative z-10 max-w-7xl">
         <div className="text-center mx-auto">
           <div className="animate-fade-in">
