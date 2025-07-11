@@ -6,7 +6,7 @@ type IconSource =
     | { type: 'emoji', symbol: string }
     | { type: 'image', src: string, alt?: string };
 
-interface FloatingIconData {
+interface FloatingIcon {
     id: number;
     icon: IconSource;
     x: number;
@@ -21,7 +21,6 @@ interface FloatingIconData {
 interface FloatingIconsProps {
     isEnabled: boolean;
 }
-
 const iconSources: IconSource[] = [
     { type: 'lucide', component: Code },
     { type: 'lucide', component: Laptop },
@@ -37,7 +36,7 @@ const iconSources: IconSource[] = [
 ];
 
 const FloatingIcons: React.FC<FloatingIconsProps> = ({ isEnabled }) => {
-    const [icons, setIcons] = useState<FloatingIconData[]>([]);
+    const [icons, setIcons] = useState<FloatingIcon[]>([]);
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
     useEffect(() => {
@@ -58,7 +57,7 @@ const FloatingIcons: React.FC<FloatingIconsProps> = ({ isEnabled }) => {
 
         // Generate initial icons
         const iconCount = Math.min(15, Math.floor(dimensions.width / 100)); // Responsive icon count
-        const initialIcons: FloatingIconData[] = Array.from({ length: iconCount }, (_, i) => {
+        const initialIcons: FloatingIcon[] = Array.from({ length: iconCount }, (_, i) => {
             const icon = iconSources[Math.floor(Math.random() * iconSources.length)];
             return {
                 id: i,
