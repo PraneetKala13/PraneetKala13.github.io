@@ -5,7 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SettingsProvider } from "@/contexts/SettingsContext";
-import FloatingIcons from "@/components/FloatingIcons";
+import FloatingIcons from "@/components/FloatingIcon";
 import AccessibilityToggle from "@/components/AccessibilityToggle";
 import { useSettings } from "@/contexts/SettingsContext";
 import Index from "./pages/Index";
@@ -15,7 +15,7 @@ const queryClient = new QueryClient();
 
 const AppContent = () => {
   const { animationsEnabled } = useSettings();
-  
+
   return (
     <>
       <FloatingIcons isEnabled={animationsEnabled} />
