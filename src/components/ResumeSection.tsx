@@ -11,9 +11,11 @@ const ResumeSection = () => {
       period: 'February 2024 - June 2024',
       description: 'Conducted comprehensive analysis of AI chatbot adoption and implementation for business optimization.',
       achievements: [
-        'Conducted comprehensive analysis of AI chatbot adoption trends, identifying key drivers behind an 84% increase in usage and 97% growth in interactions',
-        'Analysed complex datasets using PowerBI and advanced statistical methods, uncovering insights that boosted productivity by 1.42%',
-        'Designed and implemented real-time reporting mechanisms, enabling prompt identification of bottlenecks; achieved 5.41% time savings and a 5.71% productivity increase over 16 weeks'
+        'Increased chatbot usage by <strong>84%</strong> and interactions by <strong>97%</strong> through product analytics and user behaviour insights.',
+        'Delivered real-time dashboards (Power BI), improving task prioritisation and reducing resolution time by 18%, leading to a <strong>5.71% productivity uplift.</strong>',
+        'Defined reporting architecture aligned to product KPIs, reducing reporting cycles by 30%.',
+        'Presented strategic recommendations to C-level leadership, influencing a 12-month digital adoption roadmap.',
+        'Championed adoption initiatives across internal platforms indirectly through the thesis research, increasing active user engagement by 50% within 3 months.'
       ],
       skills: 'Power BI, data visualisation, data-driven decision-making, project management, agile methodologies, Python'
     },
@@ -104,20 +106,20 @@ const ResumeSection = () => {
               My professional journey and the experiences that have shaped my career.
             </p>
             <Button
-                asChild
-                className="w-full bg-gradient-to-r from-emerald-600 to-sky-600 hover:from-emerald-700 hover:to-sky-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                size="lg"
+              asChild
+              className="w-full bg-gradient-to-r from-emerald-600 to-sky-600 hover:from-emerald-700 hover:to-sky-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              size="lg"
+            >
+              <a
+                href="https://github.com/PraneetKala13/PraneetKala13.github.io/raw/main/public/Resume - Praneet Kala.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <a
-                  href="https://github.com/PraneetKala13/PraneetKala13.github.io/raw/main/public/Resume - Praneet Kala.pdf"
-                  download
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Download className="mr-2" size={20} />
-                  Download My Resume
-                </a>
-              </Button>
+                <Download className="mr-2" size={20} />
+                Download My Resume
+              </a>
+            </Button>
           </div>
 
           {/* Experience Section */}
