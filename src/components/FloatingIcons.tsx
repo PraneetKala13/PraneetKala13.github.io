@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Code, Laptop, Smartphone, Database, Cloud, Zap, Globe, Cpu, Terminal, Wifi } from 'lucide-react';
+import { Code, Laptop } from 'lucide-react';
 
 type IconSource =
     | { type: 'lucide', component: React.ComponentType<any> }
