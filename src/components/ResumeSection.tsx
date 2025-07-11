@@ -13,7 +13,7 @@ const ResumeSection = () => {
       achievements: [
         'Increased chatbot usage by <strong>84%</strong> and interactions by <strong>97%</strong> through product analytics and user behaviour insights.',
         'Delivered real-time dashboards (Power BI), improving task prioritisation and reducing resolution time by 18%, leading to a <strong>5.71% productivity uplift.</strong>',
-        'Defined reporting architecture aligned to product KPIs, reducing reporting cycles by 30%.',
+        'Defined reporting architecture aligned to product KPIsa, reducing reporting cycles by 30%.',
         'Presented strategic recommendations to C-level leadership, influencing a 12-month digital adoption roadmap.',
         'Championed adoption initiatives across internal platforms indirectly through the thesis research, increasing active user engagement by 50% within 3 months.'
       ],
@@ -154,7 +154,10 @@ const ResumeSection = () => {
                         {exp.achievements.map((achievement, idx) => (
                           <div key={idx} className="flex items-start">
                             <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                            <span className="text-sm">{achievement}</span>
+                            <span
+                              className="text-sm"
+                              dangerouslySetInnerHTML={{ __html: achievement }}
+                            />
                           </div>
                         ))}
                       </div>
