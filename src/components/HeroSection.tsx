@@ -1,7 +1,7 @@
 
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import FloatingIcons from './FloatingIcons';
+import FloatingIcons from '@/components/FloatingIcons';
 
 const HeroSection = () => {
   const scrollToAbout = () => {

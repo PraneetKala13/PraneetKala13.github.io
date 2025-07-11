@@ -34,9 +34,9 @@ const FloatingIcons: React.FC<FloatingIconsProps> = ({ isEnabled }) => {
         { type: 'emoji', symbol: '⚛️' },
         { type: 'emoji', symbol: '📱' },
         { type: 'emoji', symbol: '🔧' },
-        { type: 'emoji', symbol: '🐳' },
-        { type: 'image', src: '/icons/matlab.png', alt: 'MATLAB' }, // example local image
-        { type: 'image', src: '/icons/sim.png', alt: 'Simulink' }
+        { type: 'emoji', symbol: '🐳' }
+        //{ type: 'image', src: '/icons/matlab.png', alt: 'MATLAB' }, // example local image
+        //{ type: 'image', src: '/icons/sim.png', alt: 'Simulink' }
     ];
 
     useEffect(() => {
