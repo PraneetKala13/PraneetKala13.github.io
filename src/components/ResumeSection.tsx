@@ -52,7 +52,7 @@ const ResumeSection = () => {
       skills: 'MATLAB, Simulink, HDL, Python, Linux, DevOps, C/C++, project management, agile, CRM'
     },
     {
-      title: 'Junior Application Engineer → Consultant June 2016 - June 2020',
+      title: 'Junior Application Engineer → Consultant',
       company: 'Opti-Num Solutions (Distributors of MathWorks tools)',
       location: 'Johannesburg, South Africa',
       period: 'June 2016 - June 2020',
@@ -61,7 +61,6 @@ const ResumeSection = () => {
         'Built and delivered digital education solutions using MATLAB and Simulink across <strong>20+</strong> institutions.',
         'Facilitated <strong>50+</strong> technical enablement workshops and integration planning sessions.',
         'Introduced low-cost hardware (e.g., Raspberry Pi) into academic settings, fostering digital innovation.'
-
       ],
       skills: 'Engineering consulting, client training, modelling, simulation, control systems, estimation, software engineering'
     }
