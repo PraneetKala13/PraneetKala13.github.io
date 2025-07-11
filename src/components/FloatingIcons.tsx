@@ -6,7 +6,7 @@ type IconSource =
     | { type: 'emoji', symbol: string }
     | { type: 'image', src: string, alt?: string };
 
-interface FloatingIcons {
+interface FloatingIconData {
     id: number;
     icon: IconSource;
     x: number;
@@ -17,27 +17,28 @@ interface FloatingIcons {
     size: number;
 }
 
+
 interface FloatingIconsProps {
     isEnabled: boolean;
 }
 
-const FloatingIcons: React.FC<FloatingIconsProps> = ({ isEnabled }) => {
-    const [icons, setIcons] = useState<FloatingIcons[]>([]);
-    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+const iconSources: IconSource[] = [
+    { type: 'lucide', component: Code },
+    { type: 'lucide', component: Laptop },
+    { type: 'emoji', symbol: '🐍' },
+    { type: 'emoji', symbol: '☕' },
+    { type: 'emoji', symbol: '📊' },
+    { type: 'emoji', symbol: '⚛️' },
+    { type: 'emoji', symbol: '📱' },
+    { type: 'emoji', symbol: '🔧' },
+    { type: 'emoji', symbol: '🐳' }
+    //{ type: 'image', src: '/icons/matlab.png', alt: 'MATLAB' }, // example local image
+    //{ type: 'image', src: '/icons/sim.png', alt: 'Simulink' }
+];
 
-    const iconSources: IconSource[] = [
-        { type: 'lucide', component: Code },
-        { type: 'lucide', component: Laptop },
-        { type: 'emoji', symbol: '🐍' },
-        { type: 'emoji', symbol: '☕' },
-        { type: 'emoji', symbol: '📊' },
-        { type: 'emoji', symbol: '⚛️' },
-        { type: 'emoji', symbol: '📱' },
-        { type: 'emoji', symbol: '🔧' },
-        { type: 'emoji', symbol: '🐳' }
-        //{ type: 'image', src: '/icons/matlab.png', alt: 'MATLAB' }, // example local image
-        //{ type: 'image', src: '/icons/sim.png', alt: 'Simulink' }
-    ];
+const FloatingIcons: React.FC<FloatingIconsProps> = ({ isEnabled }) => {
+    const [icons, setIcons] = useState<FloatingIconData[]>([]);
+    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
     useEffect(() => {
         const updateDimensions = () => {
@@ -57,7 +58,7 @@ const FloatingIcons: React.FC<FloatingIconsProps> = ({ isEnabled }) => {
 
         // Generate initial icons
         const iconCount = Math.min(15, Math.floor(dimensions.width / 100)); // Responsive icon count
-        const initialIcons: FloatingIcons[] = Array.from({ length: iconCount }, (_, i) => {
+        const initialIcons: FloatingIconData[] = Array.from({ length: iconCount }, (_, i) => {
             const icon = iconSources[Math.floor(Math.random() * iconSources.length)];
             return {
                 id: i,
