@@ -1,7 +1,7 @@
 
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import FloatingIcons from '../components/FloatingIcons';
+//import FloatingIcons from '../components/FloatingIcons';
 
 const HeroSection = () => {
   const scrollToAbout = () => {
@@ -22,9 +22,6 @@ const HeroSection = () => {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-nature-gradient-soft"></div>
-
-      {/* Floating tech icons */}
-      <FloatingIcons isEnabled={true} />
 
       <div className="container mx-auto px-6 py-16 relative z-10 max-w-7xl">
         <div className="text-center mx-auto">
