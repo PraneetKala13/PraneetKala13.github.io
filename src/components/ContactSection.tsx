@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { personalInfo } from '@/data/profileData';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -43,26 +44,26 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'pj.kala333@gmail.com',
-      link: 'mailto:pj.kala333@gmail.com'
+      value: personalInfo.email,
+      link: `mailto:${personalInfo.email}`
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+46 79 359 33 56',
-      link: 'tel:+46793593356'
+      value: personalInfo.phone,
+      link: `tel:${personalInfo.phone.replace(/\s/g, '')}`
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'Stockholm, Sweden',
+      value: `${personalInfo.location} · ${personalInfo.locationNote}`,
       link: '#'
     }
   ];
 
   const socialLinks = [
-    { icon: Github, label: 'GitHub', url: 'https://github.com/PraneetKala13' },
-    { icon: Linkedin, label: 'LinkedIn', url: 'https://www.linkedin.com/in/praneet-kala-0b165678/' },
+    { icon: Github, label: 'GitHub', url: personalInfo.github },
+    { icon: Linkedin, label: 'LinkedIn', url: personalInfo.linkedIn },
   ];
 
   return (

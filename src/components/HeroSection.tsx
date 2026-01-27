@@ -1,11 +1,11 @@
-
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import FloatingIcons from '../components/FloatingIcons';
+import { personalInfo, professionalSummary, socialLinks } from '@/data/profileData';
 
 const HeroSection = () => {
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
+    const aboutSection = document.getElementById('capabilities');
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -29,17 +29,22 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 py-16 relative z-10 max-w-7xl">
         <div className="text-center mx-auto">
           <div className="animate-fade-in">
+            {/* Professional Positioning Badge */}
+            <div className="inline-flex items-center px-4 py-2 bg-emerald-100/80 backdrop-blur-sm rounded-full text-emerald-800 text-sm font-medium mb-6 border border-emerald-200/50">
+              <span className="w-2 h-2 bg-emerald-500 rounded-full mr-2 animate-pulse"></span>
+              {personalInfo.positioning} · {personalInfo.subPositioning}
+            </div>
+
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gradient">
-              Hello, I'm Praneet Jayant Kala
+              {personalInfo.name}
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-5xl mx-auto">
-              Recently graduated from KTH 🎓, I'm a tech enthusiast with an energetic drive⚡to build innovative digital solutions🧑🏽‍💻that merge creativity with functionality.
-              I thrive in collaborative environments and bring a positive💡, forward-thinking mindset⏩to every project I undertake—always balancing
-              optimism with realism and determination. As J.R.R. Tolkien once said , "Not all those who wander are lost"—a line that reflects
-              my belief in curiosity, adaptability, and purposeful exploration in the ever-evolving tech landscape.
+
+            <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-4xl mx-auto leading-relaxed">
+              {professionalSummary.short} Skilled in workflow automation, process orchestration and data-informed decision-making, with a strong focus on turning strategy into execution systems.
             </p>
-            <p className="text-lg text-muted-foreground/80 mb-8 max-w-4xl mx-auto">
-              Specializing in Project Management, Digital Systems, Systems Engineering and Design Thinking, transforming complex ideas into elegant, user-centric applications that make a meaningful impact.
+
+            <p className="text-lg text-muted-foreground/80 mb-8 max-w-3xl mx-auto">
+              Background in engineering and innovation management. Over the past year, deepened expertise through hackathons, AI events, major tech conferences and formal training in AI and project management.
             </p>
           </div>
 
@@ -49,7 +54,7 @@ const HeroSection = () => {
               className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               onClick={scrollToProjects}
             >
-              Explore My Projects
+              Explore My Work
             </Button>
             <Button
               variant="outline"
@@ -57,27 +62,35 @@ const HeroSection = () => {
               className="px-8 py-4 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105"
               onClick={() => scrollToSection('contact')}
             >
-              Let's Connect
+              Get In Touch
             </Button>
           </div>
 
           {/* Social Links */}
           <div className="animate-slide-up flex items-center justify-center space-x-6 mb-12" style={{ animationDelay: '0.4s' }}>
-            <a href="https://github.com/PraneetKala13?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <a href={personalInfo.github} target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
-                <Github size={48} />
+                <Github size={28} />
               </Button>
             </a>
-            <a href="https://www.linkedin.com/in/praneet-kala-0b165678/" target="_blank" rel="noopener noreferrer">
+            <a href={personalInfo.linkedIn} target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
-                <Linkedin size={48} />
+                <Linkedin size={28} />
               </Button>
             </a>
-            <a href="mailto:pj.kala333@gmail.com">
+            <a href={`mailto:${personalInfo.email}`}>
               <Button variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors duration-300 hover:scale-110">
-                <Mail size={48} />
+                <Mail size={28} />
               </Button>
             </a>
+          </div>
+
+          {/* Location Badge */}
+          <div className="animate-slide-up text-sm text-muted-foreground mb-8" style={{ animationDelay: '0.5s' }}>
+            <span className="inline-flex items-center">
+              <span className="mr-2">📍</span>
+              {personalInfo.location} · {personalInfo.locationNote}
+            </span>
           </div>
 
           {/* Scroll indicator */}

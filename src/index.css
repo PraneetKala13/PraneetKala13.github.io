@@ -1,9 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -130,4 +130,24 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Metric highlight styling */
+.metric-highlight {
+  @apply text-3xl md:text-4xl font-bold bg-gradient-to-r from-emerald-600 to-sky-600 bg-clip-text text-transparent;
+}
+
+/* Section divider */
+.section-divider {
+  @apply h-px bg-gradient-to-r from-transparent via-emerald-300 to-transparent my-8;
+}
+
+/* Card hover enhancement */
+.card-hover-lift {
+  @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+/* Timeline connector for resume */
+.timeline-connector {
+  @apply absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-emerald-400 to-sky-400;
 }
