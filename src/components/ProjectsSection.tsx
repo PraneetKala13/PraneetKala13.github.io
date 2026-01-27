@@ -179,12 +179,25 @@ const ProjectsSection = () => {
           </div>
 
           {/* Publication Section */}
-          <div className="bg-white/60 backdrop-blur-sm rounded-xl p-8 border border-emerald-200/30 shadow-sm">
-            <div className="text-center mb-6">
-              <h3 className="text-2xl font-semibold text-emerald-800 mb-2">Research Publication</h3>
-              <p className="text-muted-foreground">Peer-reviewed academic contribution to the field</p>
-            </div>
-            <Card className="border-emerald-200/50 bg-gradient-to-r from-emerald-50 to-sky-50">
+          <div className="relative rounded-xl p-8 border border-emerald-200/30 shadow-sm overflow-hidden">
+            {/* Background watermark image */}
+            <div
+              className="absolute inset-0 opacity-10"
+              style={{
+                backgroundImage: 'url("/Screenshot 2025-09-22 083100.png")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}
+            />
+            <div className="absolute inset-0 bg-white/70 backdrop-blur-[2px]" />
+
+            <div className="relative z-10">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-semibold text-emerald-800 mb-2">Research Publication</h3>
+                <p className="text-muted-foreground">Peer-reviewed academic contribution to the field</p>
+              </div>
+              <Card className="border-emerald-200/50 bg-gradient-to-r from-emerald-50/90 to-sky-50/90 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-sky-500 rounded-lg flex items-center justify-center shadow-md flex-shrink-0">
@@ -212,6 +225,7 @@ const ProjectsSection = () => {
                 </div>
               </CardContent>
             </Card>
+            </div>
           </div>
 
           {/* CTA Section */}

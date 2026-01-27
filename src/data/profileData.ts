@@ -148,7 +148,7 @@ export const experiences = [
     achievements: [
       'Advised academic institutions on aligning engineering and analytics tools with teaching and research goals',
       'Supported deployment, licensing and integration of platforms such as MATLAB and Simulink',
-      'Facilitated <strong>50+</strong> technical enablement workshops and integration planning sessions',
+      'Facilitated <strong>10+</strong> technical workshops and <strong>20+</strong> training sessions for MathWorks tools',
       'Introduced low-cost hardware (Raspberry Pi, Arduino) into academic settings, fostering digital innovation'
     ],
     skills: ['MATLAB', 'Simulink', 'Raspberry Pi', 'Arduino', 'Technical Training', 'Academia']

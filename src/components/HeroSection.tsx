@@ -35,9 +35,19 @@ const HeroSection = () => {
               {personalInfo.positioning} · {personalInfo.subPositioning}
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gradient">
-              {personalInfo.name}
-            </h1>
+            {/* Profile Picture and Name */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-emerald-200 shadow-xl">
+                <img
+                  src="/Prof.png"
+                  alt="Praneet Jayant Kala"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h1 className="text-5xl md:text-7xl font-bold text-gradient">
+                {personalInfo.name}
+              </h1>
+            </div>
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-4xl mx-auto leading-relaxed">
               {professionalSummary.short} Skilled in workflow automation, process orchestration and data-informed decision-making, with a strong focus on turning strategy into execution systems.

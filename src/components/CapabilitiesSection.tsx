@@ -73,12 +73,12 @@ const CapabilitiesSection = () => {
                     <div className="text-xs text-gray-600">Years Experience</div>
                   </div>
                   <div className="text-center p-4 bg-white/50 rounded-lg">
-                    <div className="text-2xl font-bold text-emerald-600">20+</div>
+                    <div className="text-2xl font-bold text-emerald-600">12+</div>
                     <div className="text-xs text-gray-600">Enterprise Clients</div>
                   </div>
                   <div className="text-center p-4 bg-white/50 rounded-lg">
-                    <div className="text-2xl font-bold text-emerald-600">50+</div>
-                    <div className="text-xs text-gray-600">Workshops Delivered</div>
+                    <div className="text-2xl font-bold text-emerald-600">30+</div>
+                    <div className="text-xs text-gray-600">Workshops & Trainings</div>
                   </div>
                   <div className="text-center p-4 bg-white/50 rounded-lg">
                     <div className="text-2xl font-bold text-emerald-600">2</div>
