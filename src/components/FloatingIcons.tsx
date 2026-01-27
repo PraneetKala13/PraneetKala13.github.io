@@ -65,7 +65,7 @@ const FloatingIcons: React.FC<FloatingIconsProps> = ({ isEnabled }) => {
                 y: Math.random() * dimensions.height,
                 speed: 0.2 + Math.random() * 0.8,
                 direction: Math.random() * Math.PI * 2,
-                opacity: 0.15 + Math.random() * 0.15,
+                opacity: 0.08 + Math.random() * 0.08,
                 size: 20 + Math.random() * 40
             };
         });
