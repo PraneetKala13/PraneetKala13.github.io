@@ -1,4 +1,4 @@
-import { ExternalLink, TrendingUp, Car, Cpu, Brain, Rocket, GraduationCap, ArrowRight } from 'lucide-react';
+import { ExternalLink, TrendingUp, Car, Cpu, Brain, Rocket, GraduationCap, ArrowRight, ArrowDown } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { projects } from '@/data/profileData';
@@ -21,11 +21,10 @@ const ProjectsSection = () => {
     <section id="projects" className="py-20 bg-gradient-to-br from-emerald-50 via-sky-50 to-lime-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">My Projects</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A showcase of my work spanning AI/ML, product development, systems engineering, and digital transformation.
-              Each project demonstrates innovative problem-solving and measurable impact.
+              Selected work across AI, product development, and digital transformation — built to solve real problems and deliver measurable outcomes.
             </p>
           </div>
 
@@ -122,6 +121,18 @@ const ProjectsSection = () => {
             </Button>
           </div>
         </div>
+      </div>
+
+      {/* Scroll to next section */}
+      <div className="flex justify-center pb-8">
+        <Button
+          variant="ghost"
+          size="icon"
+          className="animate-bounce hover:bg-primary/10 transition-colors duration-300"
+          onClick={() => document.getElementById('resume')?.scrollIntoView({ behavior: 'smooth' })}
+        >
+          <ArrowDown size={24} />
+        </Button>
       </div>
     </section>
   );

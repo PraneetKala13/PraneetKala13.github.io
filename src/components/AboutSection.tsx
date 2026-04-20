@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Brain, Map, Workflow, BarChart3, Users, Rocket, ClipboardCheck, CheckCircle, Download, MapPin } from 'lucide-react';
+import { Brain, Map, Workflow, BarChart3, Users, Rocket, ClipboardCheck, CheckCircle, Download, MapPin, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { personalInfo, coreCapabilities, technologyFocus } from '@/data/profileData';
 
@@ -157,6 +157,18 @@ const AboutSection = () => {
           </div>
 
         </div>
+      </div>
+
+      {/* Scroll to next section */}
+      <div className="flex justify-center pb-8">
+        <Button
+          variant="ghost"
+          size="icon"
+          className="animate-bounce hover:bg-primary/10 transition-colors duration-300"
+          onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+        >
+          <ArrowDown size={24} />
+        </Button>
       </div>
     </section>
   );

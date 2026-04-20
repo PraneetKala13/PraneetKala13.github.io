@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Award, Download } from 'lucide-react';
+import { Calendar, MapPin, Award, Download, ArrowDown } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { experiences, education, certifications, personalInfo, toolsAndTech } from '@/data/profileData';
@@ -332,6 +332,18 @@ const ResumeSection = () => {
           </div>
 
         </div>
+      </div>
+
+      {/* Scroll to next section */}
+      <div className="flex justify-center pb-8">
+        <Button
+          variant="ghost"
+          size="icon"
+          className="animate-bounce hover:bg-primary/10 transition-colors duration-300"
+          onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+        >
+          <ArrowDown size={24} />
+        </Button>
       </div>
     </section>
   );
