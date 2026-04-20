@@ -96,6 +96,19 @@ const HeroSection = () => {
             </span>
           </div>
 
+          {/* Currently Building — SoiQet */}
+          <div className="animate-slide-up flex justify-center mb-10" style={{ animationDelay: '0.6s' }}>
+            <div className="inline-flex items-center gap-3 px-5 py-3 bg-white/70 backdrop-blur-sm rounded-2xl border border-violet-200/60 shadow-md">
+              <span className="text-xl">🚀</span>
+              <div className="h-6 w-px bg-violet-200" />
+              <img src="/SoiQet.png" alt="SoiQet" className="h-7 w-auto object-contain" />
+              <div className="text-left">
+                <p className="text-[10px] font-semibold text-violet-500 uppercase tracking-widest leading-none mb-0.5">Currently Building</p>
+                <p className="text-sm font-semibold text-foreground leading-tight">AI-enabled SaaS platform</p>
+              </div>
+            </div>
+          </div>
+
           {/* Scroll indicator */}
           <Button
             variant="ghost"

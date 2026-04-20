@@ -57,10 +57,11 @@ interface TimelineEntry {
   location: string;
   bullets: string[];
   badge: string;
+  logo?: string;
 }
 
 // ─── Card component ───────────────────────────────────────────────────────────
-const TimelineCard = ({ colorKey, title, subtitle, period, location, bullets, badge }: TimelineEntry) => {
+const TimelineCard = ({ colorKey, title, subtitle, period, location, bullets, badge, logo }: TimelineEntry) => {
   const c = colorMap[colorKey];
   return (
     <Card className={`hover:shadow-lg transition-shadow duration-300 ${c.cardBorder} ${c.cardBg} ${c.topBorder}`}>
@@ -71,7 +72,12 @@ const TimelineCard = ({ colorKey, title, subtitle, period, location, bullets, ba
             {badge}
           </span>
         </div>
-        <p className={`text-sm font-medium ${c.subtitle}`}>{subtitle}</p>
+        <div className="flex items-center gap-2">
+          {logo && (
+            <img src={logo} alt={subtitle} className="h-5 w-auto object-contain flex-shrink-0" />
+          )}
+          <p className={`text-sm font-medium ${c.subtitle}`}>{subtitle}</p>
+        </div>
         <div className="flex flex-wrap items-center gap-x-3 gap-y-0.5 mt-1.5 mb-3 text-muted-foreground">
           <span className="flex items-center gap-1 text-xs">
             <Calendar size={11} />
@@ -105,6 +111,7 @@ const buildTimeline = (): TimelineEntry[] => [
     location: experiences[0].location,
     bullets: experiences[0].achievements.slice(0, 2),
     badge: 'Current',
+    logo: '/SoiQet.png',
   },
   {
     colorKey: 'emerald',

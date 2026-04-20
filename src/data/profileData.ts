@@ -11,6 +11,8 @@ export const personalInfo = {
   locationNote: 'Open to relocation',
   linkedIn: 'https://www.linkedin.com/in/praneet-kala/',
   github: 'https://github.com/PraneetKala13',
+  instagram: 'https://www.instagram.com/praneetkala333/',
+  facebook: 'https://www.facebook.com/profile.php?id=61586796659838',
   resumeUrl: '/Resume_of_Praneet_Kala.pdf'
 };
 
