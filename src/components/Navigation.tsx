@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Home, User, Briefcase, FileText, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { personalInfo } from '@/data/profileData';
 
 const navItems = [
   { id: 'home', label: 'Home', icon: Home },
@@ -45,6 +46,10 @@ const Navigation = () => {
 
   const handleNavClick = (sectionId: string) => {
     setIsOpen(false);
+    if (sectionId === 'contact') {
+      window.location.href = `mailto:${personalInfo.email}`;
+      return;
+    }
     if (isOnIndexPage) {
       const el = document.getElementById(sectionId);
       if (el) el.scrollIntoView({ behavior: 'smooth' });
