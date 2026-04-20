@@ -3,8 +3,8 @@
 
 export const personalInfo = {
   name: 'Praneet Jayant Kala',
-  positioning: 'Innovation & Solutioning',
-  subPositioning: 'Enterprise Modernisation',
+  positioning: 'Technical Project Manager',
+  subPositioning: 'AI & Digital Transformation Delivery',
   email: 'pj.kala333@gmail.com',
   phone: '+27 73 044 8702',
   location: 'South Africa',
@@ -15,8 +15,8 @@ export const personalInfo = {
 };
 
 export const professionalSummary = {
-  short: 'Consultant with 6+ years of experience bridging business and technology across startups and enterprise environments.',
-  full: `Project manager and AI & Product Strategy professional with 6+ years of experience bridging business and technology across startups and enterprise environments. Known for bringing cross-functional teams together, aligning stakeholders, and translating complex ideas into clear, actionable plans. Skilled in workflow automation, process orchestration and data-informed decision-making, with a strong focus on turning strategy into execution systems.`
+  short: 'Technical Project Manager with 6+ years of experience delivering enterprise IT and digital transformation initiatives.',
+  full: `Technical Project Manager with 6+ years of experience delivering enterprise IT and digital transformation initiatives across aerospace, defence, automotive and higher education sectors. Managed a multi-project portfolio including a flagship R800k enterprise deployment, leading cross-functional teams of up to 7 members while overseeing contracts, budgets and governance controls. Delivered measurable impact including a 5.7% productivity uplift in AI-enabled initiatives and 15–25% revenue growth within strategic accounts. Experienced across the full project lifecycle including initiation, scope definition, WBS development, schedule planning, execution, risk control and structured delivery governance.`
 };
 
 export const coreCapabilities = [
@@ -42,30 +42,30 @@ export const toolsAndTech = {
   'AI & Automation': ['Prompt Engineering', 'OpenAI APIs', 'n8n', 'Zapier'],
   'Product & Delivery': ['User journey mapping', 'Experimentation', 'Requirements documentation', 'Miro'],
   'Engineering & Systems': ['MATLAB', 'Simulink', 'C/C++', 'Linux'],
-  'Collaboration & Tooling': ['Git', 'Jira', 'VS Code', 'Docker']
+  'Collaboration & Tooling': ['MS Project', 'Jira', 'Git', 'VS Code', 'Docker']
 };
 
 export const keyMetrics = [
-  { value: '84%', label: 'Product Usage Increase', description: 'Improved chatbot adoption at Piab Group' },
-  { value: '97%', label: 'AI Feature Interactions', description: 'Uplift in AI-enabled feature engagement' },
-  { value: '25%', label: 'Customer Satisfaction', description: 'Improvement through workflow redesign' },
-  { value: '20%', label: 'Efficiency Gains', description: 'Process automation improvements' }
+  { value: 'R800k', label: 'Flagship Deployment', description: 'Enterprise deployment across aerospace, defence & automotive' },
+  { value: 'R1.6m+', label: 'Portfolio Value', description: 'Cumulative contract value managed across concurrent engagements' },
+  { value: '5.7%', label: 'Productivity Uplift', description: 'Measured improvement from AI-enabled initiatives at Piab Group' },
+  { value: '15–25%', label: 'Revenue Growth', description: 'Achieved within strategic accounts at Opti-Num Solutions' }
 ];
 
 export const experiences = [
   {
-    title: 'Co-founder & Product / AI Strategy Lead',
+    title: 'Co-founder & Director',
     company: 'SoiQet — Early-stage AI Venture',
-    location: 'Sweden',
-    period: 'Sep 2024 – Present',
-    description: 'Built an AI-driven venture focused on improving marketing workflows through social-media data and automation.',
+    location: 'South Africa',
+    period: 'Sep 2025 – Present',
+    description: 'Leading structured planning and phased delivery of an AI-enabled SaaS platform across product, data and integration workstreams.',
     achievements: [
-      'Defined product vision, value proposition and early roadmap for an AI-powered workflow platform',
-      'Drove rapid experimentation through hackathons, customer interviews and prototyping to validate problem–solution fit',
-      'Developed and evaluated integrations using n8n, Zapier and partner APIs to inform MVP architecture',
-      'Coordinated operations and partner engagement at Nordic tech events, strengthening facilitation and stakeholder alignment'
+      'Leading structured planning and phased delivery of an AI-enabled SaaS platform, defining scope, milestones and backlog prioritisation across product, data and integration workstreams',
+      'Translating business requirements into BRDs, user stories and execution plans, ensuring alignment between technical contributors and commercial objectives',
+      'Managing delivery risks, scope changes and dependency tracking through structured governance routines and sprint cadences',
+      'Developed structured project artefacts including scope definition documents, high-level WBS and delivery roadmaps to guide phased execution'
     ],
-    skills: ['Product Strategy', 'AI/ML', 'n8n', 'Zapier', 'OpenAI APIs', 'Stakeholder Management']
+    skills: ['Project Governance', 'WBS Development', 'Backlog Management', 'BRD Writing', 'Stakeholder Alignment', 'SaaS Delivery']
   },
   {
     title: 'Professional Development & Innovation Engagement',
@@ -82,62 +82,61 @@ export const experiences = [
     skills: ['AI Strategy', 'Hackathons', 'Public Speaking', 'Innovation', 'Networking']
   },
   {
-    title: 'Intern — AI Product Strategy & Analytics',
+    title: 'AI Innovation & Strategy Analyst (MSc Internship)',
     company: 'Piab Group',
     location: 'Stockholm, Sweden',
-    period: 'Feb 2024 – Jun 2024',
-    description: 'Supported enterprise transformation initiatives by interpreting stakeholder needs and translating them into prioritised requirements.',
+    period: 'Mar 2024 – Jun 2024',
+    description: 'Defined the roadmap for Piab\'s internal AI assistant platform, aligning Product, IT, Operations and Data teams on phased delivery and workflow impact.',
     achievements: [
-      'Analysed user journeys and product usage data, identifying <strong>84% increase</strong> in product usage and <strong>97% uplift</strong> in AI feature interactions',
-      'Built Power BI dashboards to improve visibility of adoption, reliability and value metrics for senior leadership',
-      'Translated insights into prioritised product requirements in collaboration with UX, IT and data teams',
-      'Presented strategic recommendations that influenced AI integration plans and capability investment decisions',
-      'Contributed to responsible AI policy discussions, including data quality, privacy and model risk considerations'
+      'Defined the roadmap for Piab\'s internal AI assistant platform, aligning Product, IT, Operations and Data teams on phased delivery and use-case prioritisation',
+      'Acted as Product Owner proxy, translating cross-functional requirements into structured user stories and ensuring traceability between technical components and business outcomes',
+      'Designed and delivered Power BI dashboards to leadership and functional teams, contributing to a measured <strong>5.7% productivity uplift</strong>',
+      'Initiated governance discussions on AI usage, employee data practices and GDPR alignment, contributing to compliance-aware digital innovation'
     ],
-    skills: ['Power BI', 'Data Analytics', 'Product Strategy', 'AI/ML', 'Stakeholder Communication']
+    skills: ['Power BI', 'Product Owner Proxy', 'AI Roadmapping', 'Stakeholder Alignment', 'GDPR & AI Governance']
   },
   {
-    title: 'Team Lead / Digital Project Manager — Enablement',
+    title: 'Team Lead / Digital Modernisation Manager',
     company: 'Opti-Num Solutions',
     location: 'Johannesburg, South Africa',
     period: 'Jul 2021 – Jul 2022',
-    description: 'Led cross-functional technical and commercial teams delivering digital enablement and modernisation initiatives.',
+    description: 'Directed a multi-project enterprise IT portfolio with cumulative contract values exceeding R1.6m across aerospace, defence, automotive and higher education clients.',
     achievements: [
-      'Managed 7 team members across 3 business units, delivering 4 internal digital tools that reduced manual processing time by <strong>40%</strong>',
-      'Rolled out workflow automation products cutting lead times by <strong>~30%</strong> and increasing cross-team request throughput by <strong>25%</strong>',
-      'Managed customer portfolios for 12+ enterprise clients in Aerospace & Defence, Automotive and Energy sectors',
-      'Facilitated stakeholder workshops to align expectations, surface adoption risks and support change management',
-      'Achieved <strong>100% portfolio retention</strong> and boosted customer satisfaction by <strong>25%</strong>'
+      'Directed a multi-project portfolio with cumulative contract values exceeding <strong>R1.6m</strong>, including a flagship <strong>R800k</strong> deployment across aerospace, defence and automotive clients',
+      'Led 4 direct and 3 indirect team members across consulting, engineering and analytics functions, overseeing mobilisation, resource allocation and milestone tracking',
+      'Owned contract management, budget oversight and resource forecasting across concurrent engagements, contributing to <strong>15–25% revenue growth</strong> within key strategic accounts',
+      'Built and maintained integrated delivery plans including WBS structures, Gantt schedules, dependency mapping and critical path tracking',
+      'Defined and managed project scope, SOW alignment, budget baselines and change control processes',
+      'Established and maintained RAID logs and stakeholder communication plans to proactively manage delivery risks'
     ],
-    skills: ['Team Leadership', 'Agile', 'CRM', 'Project Management', 'MATLAB', 'Simulink']
+    skills: ['Portfolio Management', 'WBS & Gantt Planning', 'RAID Log Management', 'Contract Management', 'Budget Oversight', 'Stakeholder Communication']
   },
   {
-    title: 'Senior Consultant / Project Manager — Digital Solutions',
+    title: 'Senior Consultant — Digital Solutions & Modernisation',
     company: 'Opti-Num Solutions',
     location: 'Johannesburg, South Africa',
     period: 'Jul 2020 – Jun 2021',
-    description: 'Led digital modernisation projects in regulated industries, balancing innovation with compliance requirements.',
+    description: 'Supported structured delivery across full project lifecycle in regulated industries, contributing to scope definition, WBS development and execution tracking.',
     achievements: [
-      'Delivered 5 custom software platforms for defence clients (SAAB, Denel), improving data processing by <strong>20%</strong>',
-      'Mapped end-to-end processes and identified automation opportunities, delivering <strong>20% efficiency gains</strong>',
-      'Acted as primary liaison between business and engineering teams, ensuring clear, testable requirements',
-      'Defined MVP scope and backlog; achieved <strong>90%</strong> feature delivery accuracy within client-set deadlines'
+      'Supported structured delivery across full project lifecycle, contributing to scope definition, WBS development, effort estimation, schedule planning and execution tracking',
+      'Facilitated stakeholder workshops and Agile ceremonies to clarify objectives, manage dependencies and sequence deliverables across regulated environments',
+      'Produced and maintained project artefacts including status reports, RAID logs, stakeholder maps and communication updates to support governance and decision-making',
+      'Contributed to scope definition, effort estimation and mobilisation planning across aerospace, automotive and mining sectors'
     ],
-    skills: ['MATLAB', 'Simulink', 'HDL', 'Python', 'Linux', 'DevOps', 'Defence Sector']
+    skills: ['Project Artefacts', 'RAID Logs', 'Agile Ceremonies', 'Stakeholder Workshops', 'Scope & WBS', 'Regulated Delivery']
   },
   {
-    title: 'Consultant — Digital Adoption Projects',
+    title: 'Consultant — Innovation Enablement',
     company: 'Opti-Num Solutions',
     location: 'Johannesburg, South Africa',
     period: 'Feb 2018 – Jun 2020',
-    description: 'Evaluated digital maturity and supported phased adoption of cloud, analytics and automation initiatives.',
+    description: 'Supported enterprise software deployment and adoption programmes, coordinating workshops, onboarding and training initiatives across multi-sector clients.',
     achievements: [
-      'Performed digital maturity assessments and benchmarking to inform transformation planning',
-      'Supported IT and engineering teams with platform optimisation and enablement activities',
-      'Delivered training and adoption support to reduce resistance and accelerate value realisation',
+      'Supported enterprise software deployment and adoption programmes, coordinating workshops, onboarding and training initiatives across multi-sector clients',
+      'Assisted with requirements documentation, KPI tracking and governance artefact maintenance aligned to defined delivery methodologies',
       'Built and delivered digital education solutions using MATLAB and Simulink across <strong>20+</strong> institutions'
     ],
-    skills: ['Digital Transformation', 'Training', 'MATLAB', 'Simulink', 'Change Management']
+    skills: ['Enterprise Adoption', 'Requirements Documentation', 'KPI Tracking', 'Governance Artefacts', 'Training Delivery']
   },
   {
     title: 'Application Engineer',
@@ -188,10 +187,9 @@ export const certifications = [
     year: '2025'
   },
   {
-    name: 'Project Management Specialisation',
+    name: 'Google Project Management Professional Certificate',
     issuer: 'Google',
-    year: '2025',
-    note: '3 courses'
+    year: '2025'
   }
 ];
 

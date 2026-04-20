@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Code, Laptop } from 'lucide-react';
+import { Target, BarChart3, Layers, Users } from 'lucide-react';
 
 type IconSource =
     | { type: 'lucide', component: React.ComponentType<any> }
@@ -21,17 +21,15 @@ interface FloatingIconsProps {
     isEnabled: boolean;
 }
 const iconSources: IconSource[] = [
-    { type: 'lucide', component: Code },
-    { type: 'lucide', component: Laptop },
-    { type: 'emoji', symbol: '🐍' },
-    { type: 'emoji', symbol: '☕' },
-    { type: 'emoji', symbol: '📊' },
-    { type: 'emoji', symbol: '⚛️' },
-    { type: 'emoji', symbol: '📱' },
-    { type: 'emoji', symbol: '🔧' },
-    { type: 'emoji', symbol: '🐳' }
-    //{ type: 'image', src: '/icons/matlab.png', alt: 'MATLAB' }, // example local image
-    //{ type: 'image', src: '/icons/sim.png', alt: 'Simulink' }
+    { type: 'lucide', component: Target },
+    { type: 'lucide', component: BarChart3 },
+    { type: 'lucide', component: Layers },
+    { type: 'lucide', component: Users },
+    { type: 'emoji', symbol: '🤖' },
+    { type: 'emoji', symbol: '📋' },
+    { type: 'emoji', symbol: '🏗️' },
+    { type: 'emoji', symbol: '📈' },
+    { type: 'emoji', symbol: '🎯' }
 ];
 
 const FloatingIcons: React.FC<FloatingIconsProps> = ({ isEnabled }) => {
