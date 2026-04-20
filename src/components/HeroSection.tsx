@@ -1,11 +1,11 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import FloatingIcons from '../components/FloatingIcons';
-import { personalInfo, professionalSummary, socialLinks } from '@/data/profileData';
+import { personalInfo } from '@/data/profileData';
 
 const HeroSection = () => {
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById('capabilities');
+    const aboutSection = document.getElementById('about');
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -49,13 +49,6 @@ const HeroSection = () => {
               </h1>
             </div>
 
-            <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-4xl mx-auto leading-relaxed">
-              {professionalSummary.short} Skilled in workflow automation, process orchestration and data-informed decision-making, with a strong focus on turning strategy into execution systems.
-            </p>
-
-            <p className="text-lg text-muted-foreground/80 mb-8 max-w-3xl mx-auto">
-              Background in engineering and innovation management. Over the past year, deepened expertise through hackathons, AI events, major tech conferences and formal training in AI and project management.
-            </p>
           </div>
 
           <div className="animate-slide-up flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">

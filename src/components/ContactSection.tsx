@@ -70,24 +70,16 @@ const ContactSection = () => {
     <section id="contact" className="py-20 bg-nature-gradient-soft">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">Get In Touch</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              I'm always interested in new opportunities and exciting projects. 
-              Let's discuss how we can work together!
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">Get In Touch</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Open to new opportunities, collaborations and conversations.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
-                <p className="text-muted-foreground mb-8 leading-relaxed">
-                  Whether you have a project in mind, want to collaborate, or just want to say hello, 
-                  I'd love to hear from you. Feel free to reach out through any of the channels below.
-                </p>
-              </div>
+            <div className="space-y-6">
 
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (

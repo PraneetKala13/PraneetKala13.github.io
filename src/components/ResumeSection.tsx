@@ -115,15 +115,6 @@ const buildTimeline = (): TimelineEntry[] => [
     bullets: experiences[1].achievements.slice(0, 2),
     badge: 'Work',
   },
-  {
-    colorKey: 'emerald',
-    title: experiences[2].title,
-    subtitle: experiences[2].company,
-    period: experiences[2].period,
-    location: experiences[2].location,
-    bullets: experiences[2].achievements.slice(0, 2),
-    badge: 'Work',
-  },
   // MSc sits exactly where the career break used to be
   {
     colorKey: 'amber',
@@ -136,6 +127,15 @@ const buildTimeline = (): TimelineEntry[] => [
       `Focus: ${education[0].focusAreas.slice(0, 3).join(' · ')}`,
     ],
     badge: 'Education',
+  },
+  {
+    colorKey: 'emerald',
+    title: experiences[2].title,
+    subtitle: experiences[2].company,
+    period: experiences[2].period,
+    location: experiences[2].location,
+    bullets: experiences[2].achievements.slice(0, 2),
+    badge: 'Work',
   },
   {
     colorKey: 'emerald',
@@ -162,15 +162,6 @@ const buildTimeline = (): TimelineEntry[] => [
     period: experiences[5].period,
     location: experiences[5].location,
     bullets: experiences[5].achievements.slice(0, 2),
-    badge: 'Work',
-  },
-  {
-    colorKey: 'emerald',
-    title: experiences[6].title,
-    subtitle: experiences[6].company,
-    period: experiences[6].period,
-    location: experiences[6].location,
-    bullets: experiences[6].achievements.slice(0, 2),
     badge: 'Work',
   },
   // BSc anchors the bottom

@@ -68,20 +68,6 @@ export const experiences = [
     skills: ['Project Governance', 'WBS Development', 'Backlog Management', 'BRD Writing', 'Stakeholder Alignment', 'SaaS Delivery']
   },
   {
-    title: 'Professional Development & Innovation Engagement',
-    company: 'Independent / Self-directed',
-    location: 'Sweden',
-    period: 'Aug 2024 – Present',
-    description: 'Continued hands-on development of AI, product and data literacy through applied experimentation and self-directed projects.',
-    achievements: [
-      'Participated in hackathons and innovation challenges focused on AI-enabled workflows and rapid prototyping',
-      'Practised clear storytelling and presentation of technical concepts to mixed technical and non-technical audiences',
-      'Engaged in regional and international technology ecosystems (Tech Arena, Nordic Tech Week)',
-      'Completed formal training in Project Management and AI strategy to strengthen structured delivery and governance awareness'
-    ],
-    skills: ['AI Strategy', 'Hackathons', 'Public Speaking', 'Innovation', 'Networking']
-  },
-  {
     title: 'AI Innovation & Strategy Analyst (MSc Internship)',
     company: 'Piab Group',
     location: 'Stockholm, Sweden',
