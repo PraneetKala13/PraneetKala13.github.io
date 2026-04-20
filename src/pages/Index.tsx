@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import CapabilitiesSection from '@/components/CapabilitiesSection';
@@ -9,6 +11,19 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) return;
+    const id = hash.replace('#', '');
+    // Small delay to let the page render before scrolling
+    const timer = setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+    return () => clearTimeout(timer);
+  }, [hash]);
+
   return (
     <div className="min-h-screen relative">
       <div className="relative z-10">

@@ -1,64 +1,78 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X, Home, User, Briefcase, FileText, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate, useLocation } from 'react-router-dom';
+
+const navItems = [
+  { id: 'home', label: 'Home', icon: Home },
+  { id: 'about', label: 'About Me', icon: User },
+  { id: 'projects', label: 'Projects', icon: Briefcase },
+  { id: 'resume', label: 'Resume', icon: FileText },
+  { id: 'contact', label: 'Contact', icon: Mail },
+];
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  const navItems = [
-    { id: 'home', label: 'Home', icon: Home },
-    { id: 'about', label: 'About Me', icon: User },
-    { id: 'projects', label: 'Projects', icon: Briefcase },
-    { id: 'resume', label: 'Resume', icon: FileText },
-    { id: 'contact', label: 'Contact', icon: Mail },
-  ];
+  const isOnIndexPage = location.pathname === '/';
+
+  // Derive active nav item from route when not on index
+  const effectiveActive = isOnIndexPage ? activeSection : 'projects';
 
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = navItems.map(item => document.getElementById(item.id));
-      const scrollPosition = window.scrollY + 100;
+    if (!isOnIndexPage) return;
 
-      sections.forEach((section, index) => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 100;
+      for (const item of navItems) {
+        const section = document.getElementById(item.id);
         if (section) {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.offsetHeight;
-          
-          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-            setActiveSection(navItems[index].id);
+          const { offsetTop, offsetHeight } = section;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(item.id);
+            break;
           }
         }
-      });
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isOnIndexPage]);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleNavClick = (sectionId: string) => {
     setIsOpen(false);
+    if (isOnIndexPage) {
+      const el = document.getElementById(sectionId);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate(`/#${sectionId}`);
+    }
   };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-white/20">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-gradient">Praneet Jayant Kala</div>
-          
+          <div
+            className="text-2xl font-bold text-gradient cursor-pointer"
+            onClick={() => handleNavClick('home')}
+          >
+            Praneet Jayant Kala
+          </div>
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => handleNavClick(item.id)}
                 className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 ${
-                  activeSection === item.id 
-                    ? 'bg-primary text-white shadow-lg' 
+                  effectiveActive === item.id
+                    ? 'bg-primary text-white shadow-lg'
                     : 'hover:bg-primary/10 text-foreground'
                 }`}
               >
@@ -85,10 +99,10 @@ const Navigation = () => {
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => handleNavClick(item.id)}
                 className={`flex items-center space-x-3 w-full px-6 py-3 text-left transition-all duration-300 ${
-                  activeSection === item.id 
-                    ? 'bg-primary text-white' 
+                  effectiveActive === item.id
+                    ? 'bg-primary text-white'
                     : 'hover:bg-primary/10 text-foreground'
                 }`}
               >

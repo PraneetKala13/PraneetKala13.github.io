@@ -32,7 +32,7 @@ const Projects = () => {
             <Button
               variant="ghost"
               className="mb-6 text-emerald-700 hover:text-emerald-900 hover:bg-emerald-100 -ml-2"
-              onClick={() => navigate('/#projects')}
+              onClick={() => navigate('/')}
             >
               <ArrowLeft size={16} className="mr-2" />
               Back to Home
