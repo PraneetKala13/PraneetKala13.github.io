@@ -36,12 +36,12 @@ const HeroSection = () => {
             </div>
 
             {/* Profile Picture and Name */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-emerald-200 shadow-xl">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
+              <div className="w-40 md:w-52 overflow-hidden rounded-2xl border-4 border-emerald-200 shadow-2xl flex-shrink-0">
                 <img
-                  src="/Prof.png"
+                  src="/Me.png"
                   alt="Praneet Jayant Kala"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-cover object-top"
                 />
               </div>
               <h1 className="text-5xl md:text-7xl font-bold text-gradient">
@@ -98,15 +98,23 @@ const HeroSection = () => {
 
           {/* Currently Building — SoiQet */}
           <div className="animate-slide-up flex justify-center mb-10" style={{ animationDelay: '0.6s' }}>
-            <div className="inline-flex items-center gap-3 px-5 py-3 bg-white/70 backdrop-blur-sm rounded-2xl border border-violet-200/60 shadow-md">
-              <span className="text-xl">🚀</span>
-              <div className="h-6 w-px bg-violet-200" />
-              <img src="/SoiQet.png" alt="SoiQet" className="h-7 w-auto object-contain" />
+            <a
+              href="https://soiqet.lovable.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-4 px-7 py-4 bg-white/70 backdrop-blur-sm rounded-2xl border border-violet-200/60 shadow-md hover:shadow-lg hover:border-violet-300/80 hover:-translate-y-0.5 transition-all duration-200"
+            >
+              <span className="text-2xl">🚀</span>
+              <div className="h-8 w-px bg-violet-200" />
+              <img src="/SoiQet.png" alt="SoiQet" className="h-9 w-auto object-contain" />
               <div className="text-left">
-                <p className="text-[10px] font-semibold text-violet-500 uppercase tracking-widest leading-none mb-0.5">Currently Building</p>
-                <p className="text-sm font-semibold text-foreground leading-tight">AI-enabled SaaS platform</p>
+                <p className="text-[11px] font-semibold text-violet-500 uppercase tracking-widest leading-none mb-1">Currently Building</p>
+                <p className="text-base font-semibold text-foreground leading-tight group-hover:text-violet-700 transition-colors duration-200">AI-enabled SaaS platform</p>
               </div>
-            </div>
+              <svg className="w-4 h-4 text-violet-400 group-hover:text-violet-600 transition-colors duration-200 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
           </div>
 
           {/* Scroll indicator */}
