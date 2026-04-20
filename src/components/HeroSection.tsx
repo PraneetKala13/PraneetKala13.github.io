@@ -39,12 +39,12 @@ const HeroSection = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
               <div className="w-40 md:w-52 overflow-hidden rounded-2xl border-4 border-emerald-200 shadow-2xl flex-shrink-0">
                 <img
-                  src="/Me.png"
+                  src="/Me.jpg"
                   alt="Praneet Jayant Kala"
                   className="w-full h-auto object-cover object-top"
                 />
               </div>
-              <h1 className="text-5xl md:text-7xl font-bold text-gradient">
+              <h1 className="text-5xl md:text-7xl font-bold text-gradient pb-2">
                 {personalInfo.name}
               </h1>
             </div>
@@ -97,7 +97,7 @@ const HeroSection = () => {
           </div>
 
           {/* Currently Building — SoiQet */}
-          <div className="animate-slide-up flex justify-center mb-10" style={{ animationDelay: '0.6s' }}>
+          <div className="animate-slide-up flex flex-col items-center gap-3 mb-8" style={{ animationDelay: '0.6s' }}>
             <a
               href="https://soiqet.lovable.app/"
               target="_blank"
@@ -109,12 +109,22 @@ const HeroSection = () => {
               <img src="/SoiQet.png" alt="SoiQet" className="h-9 w-auto object-contain" />
               <div className="text-left">
                 <p className="text-[11px] font-semibold text-violet-500 uppercase tracking-widest leading-none mb-1">Currently Building</p>
-                <p className="text-base font-semibold text-foreground leading-tight group-hover:text-violet-700 transition-colors duration-200">AI-enabled SaaS platform</p>
+                <p className="text-base font-semibold text-foreground leading-tight group-hover:text-violet-700 transition-colors duration-200">SoiQet — AI-enabled SaaS platform</p>
               </div>
               <svg className="w-4 h-4 text-violet-400 group-hover:text-violet-600 transition-colors duration-200 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
             </a>
+
+            {/* Peachscore Cohort 30 */}
+            <div className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-white/60 backdrop-blur-sm rounded-xl border border-orange-200/60 shadow-sm">
+              <span className="text-xl">🍑</span>
+              <div className="h-5 w-px bg-orange-200" />
+              <div className="text-left">
+                <p className="text-[10px] font-semibold text-orange-500 uppercase tracking-widest leading-none mb-0.5">Startup Programme</p>
+                <p className="text-sm font-medium text-foreground leading-tight">Peachscore · Cohort 30</p>
+              </div>
+            </div>
           </div>
 
           {/* Scroll indicator */}
