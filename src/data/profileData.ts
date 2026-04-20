@@ -24,11 +24,11 @@ export const professionalSummary = {
 export const coreCapabilities = [
   { title: 'AI strategy & GenAI adoption', icon: 'Brain' },
   { title: 'Product discovery & roadmapping', icon: 'Map' },
-  { title: 'Workflow & process design', icon: 'Workflow' },
-  { title: 'Data analysis & decision support', icon: 'BarChart3' },
+  { title: 'API integration & platform connectivity', icon: 'Link2' },
+  { title: 'Rapid prototyping & MVP execution', icon: 'Zap' },
+  { title: 'Technical problem-solving & debugging', icon: 'Wrench' },
   { title: 'Stakeholder alignment & facilitation', icon: 'Users' },
-  { title: 'Digital strategy & transformation', icon: 'Rocket' },
-  { title: 'Program & project governance', icon: 'ClipboardCheck' }
+  { title: 'Program & project governance', icon: 'ClipboardCheck' },
 ];
 
 export const technologyFocus = [
@@ -39,12 +39,23 @@ export const technologyFocus = [
   'Agile delivery patterns'
 ];
 
-export const toolsAndTech = {
-  'Data & Analytics': ['Power BI', 'Supabase', 'SQL', 'Python', 'Pandas', 'NumPy'],
-  'AI & Automation': ['Prompt Engineering', 'OpenAI APIs', 'n8n', 'Zapier'],
-  'Product & Delivery': ['User journey mapping', 'Experimentation', 'Requirements documentation', 'Miro'],
-  'Engineering & Systems': ['MATLAB', 'Simulink', 'C/C++', 'Linux'],
-  'Collaboration & Tooling': ['MS Project', 'Jira', 'Git', 'VS Code', 'Docker']
+// AI & Data Systems — foundational technologies for building AI-enabled systems
+export const aiDataSystems = {
+  'AI & APIs': ['Prompt Engineering', 'OpenAI APIs', 'AI-assisted Implementation'],
+  'Integration & Auth': ['API Integration', 'OAuth & Auth Flows', 'API Testing', 'Webhook Setup'],
+  'Data & Backend': ['Python', 'SQL', 'Supabase', 'JSON & Data Structuring'],
+  'Infrastructure': ['Azure', 'Docker', 'Linux'],
+  'Engineering': ['MATLAB', 'Simulink', 'C/C++'],
+};
+
+// Delivery & Product Execution — tools, workflows and platforms that support execution
+export const deliveryTools = {
+  'Automation & Build': ['n8n', 'Zapier', 'Lovable', 'Rapid Prototyping'],
+  'Data & Analytics': ['Power BI', 'Pandas', 'NumPy'],
+  'Product Execution': ['Feature Prioritisation', 'MVP Scoping', 'Competitor Analysis', 'Experimentation'],
+  'Technical Docs': ['Requirements Documentation', 'BRD Writing', 'System Flow Mapping'],
+  'Collaboration & PM': ['Miro', 'Jira', 'Notion', 'Slack', 'MS Project'],
+  'Dev & Version Control': ['Git', 'VS Code', 'Integration Debugging'],
 };
 
 export const keyMetrics = [

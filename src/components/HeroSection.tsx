@@ -36,19 +36,10 @@ const HeroSection = () => {
             {personalInfo.positioning} · {personalInfo.subPositioning}
           </div>
 
-          {/* Profile Picture and Name */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
-            <div className="w-40 md:w-52 overflow-hidden rounded-2xl border-4 border-emerald-200 shadow-2xl flex-shrink-0">
-              <img
-                src="/Me.jpg"
-                alt="Praneet Jayant Kala"
-                className="w-full h-auto object-cover object-top"
-              />
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-gradient pb-2">
-              {personalInfo.name}
-            </h1>
-          </div>
+          {/* Name */}
+          <h1 className="animate-fade-in text-5xl md:text-6xl lg:text-7xl font-bold text-gradient pb-2 mb-6 leading-tight">
+            {personalInfo.name}
+          </h1>
 
           {/* CTA buttons */}
           <div className="animate-slide-up flex flex-wrap justify-center gap-4 mb-6">
