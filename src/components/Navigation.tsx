@@ -63,7 +63,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div
-            className="text-2xl font-bold text-gradient cursor-pointer"
+            className="text-2xl font-bold text-foreground cursor-pointer"
             onClick={() => handleNavClick('home')}
           >
             Praneet Jayant Kala
@@ -77,8 +77,8 @@ const Navigation = () => {
                 onClick={() => handleNavClick(item.id)}
                 className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 ${
                   effectiveActive === item.id
-                    ? 'bg-primary text-white shadow-lg'
-                    : 'hover:bg-primary/10 text-foreground'
+                    ? 'bg-[#071739] text-white shadow-lg'
+                    : 'hover:bg-[#071739]/10 text-foreground'
                 }`}
               >
                 <item.icon size={18} />
@@ -107,8 +107,8 @@ const Navigation = () => {
                 onClick={() => handleNavClick(item.id)}
                 className={`flex items-center space-x-3 w-full px-6 py-3 text-left transition-all duration-300 ${
                   effectiveActive === item.id
-                    ? 'bg-primary text-white'
-                    : 'hover:bg-primary/10 text-foreground'
+                    ? 'bg-[#071739] text-white'
+                    : 'hover:bg-[#071739]/10 text-foreground'
                 }`}
               >
                 <item.icon size={20} />

@@ -4,6 +4,9 @@ import { Button } from '@/components/ui/button';
 import { experiences, education, certifications, personalInfo } from '@/data/profileData';
 
 // ─── Colour system ────────────────────────────────────────────────────────────
+// violet  → current role   (#071739 navy)
+// emerald → work experience (#4B6382 steel blue)
+// amber   → education       (#A68868 warm tan)
 type ColorKey = 'violet' | 'emerald' | 'amber';
 
 const colorMap: Record<ColorKey, {
@@ -17,34 +20,34 @@ const colorMap: Record<ColorKey, {
   badge: string;
 }> = {
   violet: {
-    dot:        'bg-violet-500',
-    ring:       'ring-4 ring-violet-100',
-    topBorder:  'border-t-2 border-t-violet-400',
-    cardBg:     'bg-gradient-to-br from-violet-50/60 to-white',
-    cardBorder: 'border-violet-200/70',
-    bullet:     'bg-violet-500',
-    subtitle:   'text-violet-600',
-    badge:      'bg-violet-100 text-violet-700',
+    dot:        'bg-[#071739]',
+    ring:       'ring-4 ring-[#071739]/20',
+    topBorder:  'border-t-4 border-t-[#071739]',
+    cardBg:     'bg-[#071739]/[0.04]',
+    cardBorder: 'border-[#071739]/30',
+    bullet:     'bg-[#071739]',
+    subtitle:   'text-[#071739]',
+    badge:      'bg-[#071739] text-white',
   },
   emerald: {
-    dot:        'bg-emerald-500',
-    ring:       'ring-4 ring-emerald-100',
-    topBorder:  'border-t-2 border-t-emerald-400',
+    dot:        'bg-[#4B6382]',
+    ring:       'ring-4 ring-[#CDD5DB]',
+    topBorder:  'border-t-2 border-t-[#4B6382]',
     cardBg:     'bg-white',
-    cardBorder: 'border-emerald-200/60',
-    bullet:     'bg-emerald-500',
-    subtitle:   'text-emerald-600',
-    badge:      'bg-emerald-100 text-emerald-700',
+    cardBorder: 'border-[#4B6382]/20',
+    bullet:     'bg-[#4B6382]',
+    subtitle:   'text-[#4B6382]',
+    badge:      'bg-[#4B6382]/10 text-[#4B6382]',
   },
   amber: {
-    dot:        'bg-amber-500',
-    ring:       'ring-4 ring-amber-100',
-    topBorder:  'border-t-2 border-t-amber-400',
-    cardBg:     'bg-gradient-to-br from-amber-50/60 to-white',
-    cardBorder: 'border-amber-200/70',
-    bullet:     'bg-amber-500',
-    subtitle:   'text-amber-700',
-    badge:      'bg-amber-100 text-amber-700',
+    dot:        'bg-[#A68868]',
+    ring:       'ring-4 ring-[#CDD5DB]',
+    topBorder:  'border-t-2 border-t-[#A68868]',
+    cardBg:     'bg-white',
+    cardBorder: 'border-[#A68868]/35',
+    bullet:     'bg-[#A68868]',
+    subtitle:   'text-[#A68868]',
+    badge:      'bg-[#A68868]/15 text-[#A68868]',
   },
 };
 
@@ -64,7 +67,7 @@ interface TimelineEntry {
 const TimelineCard = ({ colorKey, title, subtitle, period, location, bullets, badge, logo }: TimelineEntry) => {
   const c = colorMap[colorKey];
   return (
-    <Card className={`hover:shadow-lg transition-shadow duration-300 ${c.cardBorder} ${c.cardBg} ${c.topBorder}`}>
+    <Card className={`transition-shadow duration-300 ${c.cardBorder} ${c.cardBg} ${c.topBorder} ${colorKey === 'violet' ? 'shadow-md hover:shadow-xl' : 'hover:shadow-lg'}`}>
       <CardContent className="p-5">
         <div className="flex items-start justify-between gap-2 mb-0.5">
           <h4 className="text-base font-semibold text-foreground leading-snug">{title}</h4>
@@ -78,7 +81,7 @@ const TimelineCard = ({ colorKey, title, subtitle, period, location, bullets, ba
           )}
           <p className={`text-sm font-medium ${c.subtitle}`}>{subtitle}</p>
         </div>
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-0.5 mt-1.5 mb-3 text-muted-foreground">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-0.5 mt-1.5 mb-3 text-[#A68868]">
           <span className="flex items-center gap-1 text-xs">
             <Calendar size={11} />
             {period}
@@ -197,7 +200,7 @@ const ResumeSection = () => {
 
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">Resume</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Resume</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               My professional journey and the experiences that have shaped my career
             </p>
@@ -210,15 +213,15 @@ const ResumeSection = () => {
               {/* Legend */}
               <div className="flex items-center gap-5 text-xs text-muted-foreground">
                 <span className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-violet-500 flex-shrink-0" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#071739] flex-shrink-0" />
                   Current role
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 flex-shrink-0" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#4B6382] flex-shrink-0" />
                   Work experience
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-amber-500 flex-shrink-0" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#A68868] flex-shrink-0" />
                   Education
                 </span>
               </div>
@@ -226,8 +229,11 @@ const ResumeSection = () => {
 
             {/* ── Desktop zigzag ── */}
             <div className="hidden md:block relative">
-              {/* Gradient centre line */}
-              <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-violet-400 via-emerald-400 to-amber-400" />
+              {/* Centre line — navy → steel blue → warm tan */}
+              <div
+                className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-px"
+                style={{ background: 'linear-gradient(to bottom, #071739, #4B6382, #A68868)' }}
+              />
 
               {timeline.map((entry, index) => {
                 const isLeft = index % 2 === 0;
@@ -255,7 +261,10 @@ const ResumeSection = () => {
 
             {/* ── Mobile left-rail ── */}
             <div className="md:hidden relative pl-7">
-              <div className="absolute left-2.5 top-0 bottom-0 w-px bg-gradient-to-b from-violet-400 via-emerald-400 to-amber-400" />
+              <div
+                className="absolute left-2.5 top-0 bottom-0 w-px"
+                style={{ background: 'linear-gradient(to bottom, #071739, #4B6382, #A68868)' }}
+              />
               {timeline.map((entry, index) => {
                 const c = colorMap[entry.colorKey];
                 return (
@@ -272,7 +281,7 @@ const ResumeSection = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-emerald-600 to-sky-600 hover:from-emerald-700 hover:to-sky-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
+                className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
               >
                 <a href={personalInfo.resumeUrl} download target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2" size={18} />
@@ -289,15 +298,15 @@ const ResumeSection = () => {
               <h3 className="text-3xl font-semibold">Certifications</h3>
             </div>
             <div className="grid md:grid-cols-3 gap-4">
-              {certifications.map((cert, index) => (
-                <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300 border-emerald-200/50 bg-gradient-to-br from-white to-emerald-50/30">
+              {certifications.map((cert) => (
+                <Card key={cert.name} className="text-center hover:shadow-lg transition-shadow duration-300 border-border bg-white">
                   <CardContent className="p-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-sky-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                       <Award className="text-white" size={22} />
                     </div>
                     <h4 className="text-sm font-semibold mb-2">{cert.name}</h4>
                     <p className="text-xs text-muted-foreground">{cert.issuer}</p>
-                    <p className="text-xs text-emerald-600 font-medium mt-1">{cert.year}</p>
+                    <p className="text-xs text-[#A68868] font-medium mt-1">{cert.year}</p>
                   </CardContent>
                 </Card>
               ))}

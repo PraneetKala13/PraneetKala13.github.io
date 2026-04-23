@@ -20,12 +20,12 @@ const AboutSection = () => {
   const [activeTab, setActiveTab] = useState<Tab>('about');
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-emerald-50 via-sky-50 to-lime-50">
+    <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
 
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">About Me</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">About Me</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Bridging engineering discipline and innovation mindset to deliver measurable impact
             </p>
@@ -35,7 +35,7 @@ const AboutSection = () => {
 
             {/* ── Left: photo ── */}
             <div className="md:col-span-2 flex flex-col">
-              <div className="bg-gradient-to-br from-emerald-100 via-sky-100 to-lime-100 rounded-2xl p-3 shadow-lg border border-emerald-200/50 overflow-hidden flex-1">
+              <div className="bg-background rounded-2xl p-3 shadow-lg border border-border overflow-hidden flex-1">
                 <img
                   src="/DSC_4972_enhanced_2.JPG"
                   alt="Praneet Jayant Kala"
@@ -48,14 +48,14 @@ const AboutSection = () => {
             <div className="md:col-span-3 flex flex-col">
 
               {/* Tab bar */}
-              <div className="flex gap-1 p-1 bg-white/60 rounded-xl border border-emerald-200/30 mb-5 flex-shrink-0">
+              <div className="flex gap-1 p-1 bg-background/60 rounded-xl border border-border mb-5 flex-shrink-0">
                 {tabs.map(tab => (
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
                     className={`flex-1 py-2.5 px-2 rounded-lg text-xs font-medium transition-all duration-200 ${
                       activeTab === tab.id
-                        ? 'bg-gradient-to-r from-emerald-500 to-sky-500 text-white shadow-sm'
+                        ? 'bg-[#4B6382] text-white shadow-sm'
                         : 'text-muted-foreground hover:text-foreground hover:bg-white/60'
                     }`}
                   >
@@ -65,11 +65,11 @@ const AboutSection = () => {
               </div>
 
               {/* Tab content — relative wrapper locks the frame; panels fill it absolutely */}
-              <div className="bg-white/60 backdrop-blur-sm rounded-xl border border-emerald-200/30 shadow-sm flex-1 relative overflow-hidden min-h-[480px]">
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl border border-border shadow-sm flex-1 relative overflow-hidden min-h-[480px]">
 
                 {/* About */}
                 <div className={`absolute inset-0 p-6 overflow-y-auto transition-opacity duration-200 ${activeTab === 'about' ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
-                  <h3 className="text-base font-semibold text-emerald-800 mb-3">My Journey</h3>
+                  <h3 className="text-base font-semibold text-foreground mb-3">My Journey</h3>
                   <p className="text-gray-700 leading-relaxed mb-4 text-sm">
                     I started as a mechanical engineer but quickly realised my sharpest edge was making
                     complex systems — and teams — work together. After six years delivering enterprise
@@ -91,7 +91,7 @@ const AboutSection = () => {
                   <Button
                     asChild
                     size="sm"
-                    className="bg-gradient-to-r from-emerald-600 to-sky-600 hover:from-emerald-700 hover:to-sky-700 text-white shadow-md"
+                    className="bg-primary hover:bg-primary/90 text-white shadow-md"
                   >
                     <a href={personalInfo.resumeUrl} download target="_blank" rel="noopener noreferrer">
                       <Download size={14} className="mr-2" />
@@ -103,17 +103,17 @@ const AboutSection = () => {
                 {/* What I Bring — high-level capabilities framed as business outcomes */}
                 <div className={`absolute inset-0 p-6 overflow-y-auto transition-opacity duration-200 ${activeTab === 'bring' ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
                   <div className="space-y-2">
-                    {coreCapabilities.map((cap, i) => {
+                    {coreCapabilities.map((cap) => {
                       const Icon = iconMap[cap.icon] || CheckCircle;
                       return (
                         <div
-                          key={i}
-                          className="flex items-center p-2.5 bg-white/70 rounded-lg border border-emerald-100 hover:border-emerald-200 hover:shadow-sm transition-all duration-200"
+                          key={cap.title}
+                          className="flex items-center p-2.5 bg-white rounded-lg border border-border hover:border-[#4B6382]/40 hover:shadow-sm transition-all duration-200"
                         >
-                          <div className="w-7 h-7 bg-gradient-to-br from-emerald-400 to-sky-500 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                          <div className="w-7 h-7 bg-primary rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
                             <Icon size={14} className="text-white" />
                           </div>
-                          <span className="text-gray-700 font-medium text-sm">{cap.title}</span>
+                          <span className="text-foreground font-medium text-sm">{cap.title}</span>
                         </div>
                       );
                     })}
@@ -125,12 +125,12 @@ const AboutSection = () => {
                   <div className="space-y-4">
                     {Object.entries(aiDataSystems).map(([category, items]) => (
                       <div key={category}>
-                        <p className="text-[11px] font-semibold text-emerald-700 uppercase tracking-widest mb-2">{category}</p>
+                        <p className="text-[11px] font-semibold text-[#4B6382] uppercase tracking-widest mb-2">{category}</p>
                         <div className="flex flex-wrap gap-1.5">
                           {items.map((item) => (
                             <span
                               key={item}
-                              className="px-2.5 py-1 bg-gradient-to-r from-emerald-50 to-sky-50 text-emerald-800 rounded-full text-xs font-medium border border-emerald-200/60"
+                              className="px-2.5 py-1 bg-[#4B6382] text-white rounded-full text-xs font-medium"
                             >
                               {item}
                             </span>
@@ -146,12 +146,12 @@ const AboutSection = () => {
                   <div className="space-y-4">
                     {Object.entries(deliveryTools).map(([category, items]) => (
                       <div key={category}>
-                        <p className="text-[11px] font-semibold text-emerald-700 uppercase tracking-widest mb-2">{category}</p>
+                        <p className="text-[11px] font-semibold text-[#4B6382] uppercase tracking-widest mb-2">{category}</p>
                         <div className="flex flex-wrap gap-1.5">
                           {items.map((item) => (
                             <span
                               key={item}
-                              className="px-2.5 py-1 bg-gradient-to-r from-emerald-50 to-sky-50 text-emerald-800 rounded-full text-xs font-medium border border-emerald-200/60"
+                              className="px-2.5 py-1 bg-[#4B6382] text-white rounded-full text-xs font-medium"
                             >
                               {item}
                             </span>

@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto text-center">
 
           {/* CTA */}
-          <h3 className="text-2xl font-bold text-gradient mb-2">Praneet Jayant Kala</h3>
+          <h3 className="text-2xl font-bold text-background mb-2">Praneet Jayant Kala</h3>
           <p className="text-background/60 text-sm mb-6">
             Open to new opportunities, collaborations and conversations.
           </p>
@@ -56,7 +56,7 @@ const Footer = () => {
           <div className="flex items-center justify-center gap-3 mb-10">
             <Button
               asChild
-              className="bg-gradient-to-r from-emerald-500 to-sky-500 hover:from-emerald-600 hover:to-sky-600 text-white shadow-lg px-6"
+              className="bg-background text-foreground hover:bg-background/90 shadow-lg px-6"
             >
               <a href={`mailto:${personalInfo.email}`}>Get In Touch</a>
             </Button>

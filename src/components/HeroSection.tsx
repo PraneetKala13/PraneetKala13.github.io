@@ -1,6 +1,5 @@
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import FloatingIcons from '../components/FloatingIcons';
 import { personalInfo } from '@/data/profileData';
 
 const ExternalLinkIcon = () => (
@@ -19,25 +18,20 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-nature-gradient-soft" />
-
-      {/* Floating icons — behind everything */}
-      <FloatingIcons isEnabled={true} />
+    <section id="home" className="min-h-screen flex relative overflow-hidden bg-background">
 
       {/* ── Left: text content ── */}
       <div className="relative z-10 flex flex-1 items-center justify-center px-8 py-24">
         <div className="w-full max-w-lg text-center">
 
           {/* Positioning badge */}
-          <div className="animate-fade-in inline-flex items-center px-4 py-2 bg-emerald-100/80 backdrop-blur-sm rounded-full text-emerald-800 text-sm font-medium mb-6 border border-emerald-200/50">
-            <span className="w-2 h-2 bg-emerald-500 rounded-full mr-2 animate-pulse" />
+          <div className="animate-fade-in inline-flex items-center px-4 py-2 bg-white/60 backdrop-blur-sm rounded-full text-foreground text-sm font-medium mb-6 border border-border">
+            <span className="w-2 h-2 bg-foreground rounded-full mr-2 animate-pulse" />
             {personalInfo.positioning} · {personalInfo.subPositioning}
           </div>
 
           {/* Name */}
-          <h1 className="animate-fade-in text-5xl md:text-6xl lg:text-7xl font-bold text-gradient pb-2 mb-6 leading-tight">
+          <h1 className="animate-fade-in text-5xl md:text-6xl lg:text-7xl font-bold text-foreground pb-2 mb-6 leading-tight">
             {personalInfo.name}
           </h1>
 
@@ -68,24 +62,24 @@ const HeroSection = () => {
             </span>
           </div>
 
-          {/* Currently Building — SoiQet + Peachscore (two separate links, one card) */}
+          {/* Currently Building — SoiQet + Peachscore */}
           <div className="animate-slide-up flex justify-center" style={{ animationDelay: '0.3s' }}>
-            <div className="inline-flex flex-col w-full bg-white/70 backdrop-blur-sm rounded-2xl border border-violet-200/60 shadow-md overflow-hidden">
+            <div className="inline-flex flex-col w-full bg-white/70 backdrop-blur-sm rounded-2xl border border-border shadow-md overflow-hidden">
 
               {/* SoiQet link */}
               <a
                 href="https://soiqet.lovable.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-5 px-6 py-5 hover:bg-violet-50/60 transition-colors duration-200"
+                className="group flex items-center gap-5 px-6 py-5 hover:bg-muted/40 transition-colors duration-200"
               >
                 <img src="/SoiQet.png" alt="SoiQet" className="h-12 w-auto object-contain flex-shrink-0" />
-                <div className="h-10 w-px bg-violet-200" />
+                <div className="h-10 w-px bg-border" />
                 <div className="text-left flex-1">
-                  <p className="text-[10px] font-semibold text-violet-500 uppercase tracking-widest leading-none mb-1.5">Currently Building</p>
-                  <p className="text-base font-semibold text-foreground leading-tight group-hover:text-violet-700 transition-colors duration-200">SoiQet — AI-enabled SaaS platform</p>
+                  <p className="text-[10px] font-semibold text-[#A68868] uppercase tracking-widest leading-none mb-1.5">Currently Building</p>
+                  <p className="text-base font-semibold text-foreground leading-tight group-hover:text-primary transition-colors duration-200">SoiQet — AI-enabled SaaS platform</p>
                 </div>
-                <span className="text-violet-400 group-hover:text-violet-600 transition-colors duration-200">
+                <span className="text-muted-foreground group-hover:text-primary transition-colors duration-200">
                   <ExternalLinkIcon />
                 </span>
               </a>
@@ -118,8 +112,6 @@ const HeroSection = () => {
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: 'center 5%' }}
         />
-        {/* Soft left-side fade so photo blends into background */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--background))] via-transparent to-transparent w-24" />
       </div>
 
       {/* Scroll indicator */}
